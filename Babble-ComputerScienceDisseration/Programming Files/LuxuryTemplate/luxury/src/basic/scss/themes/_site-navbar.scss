@@ -1,0 +1,136 @@
+/* [12 navbar theme] */
+
+.navbar-light,
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      color: $brand-primary;
+
+      @include hover-focus {
+        color: $brand-success;
+      }
+    }
+
+    .open > .nav-link,
+    .active > .nav-link,
+    .nav-link.open,
+    .nav-link.active {
+      @include plain-hover-focus {
+        color: $brand-success;
+      }
+    }
+
+    .nav-link > .badge-success {
+      box-shadow: 0 0 12px $brand-success;
+    }
+    
+    .nav-link > .badge-danger {
+      box-shadow: 0 0 12px $brand-danger;
+    }
+  }
+}
+
+.navbar-light {
+  border-bottom: 2px solid darken(#fff, 10%);
+  .hamburger {
+    background: darken($blue, 5%);
+  }
+
+  .navbar-btn {
+    color: #fff;
+    background: none;
+  }
+
+  .navbar-nav .nav-item {
+    border-left: 1px solid darken(#fff, 10%);
+    &:first-child { border: none; }
+  }
+  
+  @include media-breakpoint-down(md) {
+    border-bottom: none !important;
+    .hamburger {
+      background: none;
+    }
+
+    .navbar-nav .nav-item {
+      border: none !important;
+    }
+  }
+}
+
+.navbar-dark {
+  .hamburger {
+    background: none;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .navbar-nav {
+      .site-user img {
+        border: 1px solid rgba(#fff, .7);
+      }
+
+      .nav-link {
+        color: rgba(#fff, .7);
+        font-weight: 400;
+        @include hover-focus { color: #fff; }
+      }
+
+      .open > .nav-link,
+      .active > .nav-link,
+      .nav-link.open,
+      .nav-link.active {
+        @include plain-hover-focus {
+          color: #fff;
+        }
+      }
+
+      .nav-link > .badge-success {
+        border: 1px solid #fff;
+        background: darken($brand-success, 5%);
+      }
+      
+      .nav-link > .badge-danger {
+        border: 1px solid #fff;
+        background: darken($brand-danger, 5%);
+      }
+    }
+  }
+
+  .navbar-search {
+    .navbar-search-field {
+      border: none;
+      &:focus { border: none; }
+    }
+  }
+}
+
+// navbar-header
+.navbar-header {
+  background-color: transparent;
+  .navbar-toggler,
+  .navbar-brand, a {
+    color: #fff;
+    @include hover-focus { color: #fff; }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .navbar-light & {
+      background-color: $bg-faded;
+      .navbar-toggler,
+      .navbar-brand, a {
+        color: $brand-primary;
+        @include hover-focus { color: $brand-primary; }
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  background-color: #FFF;
+  @include media-breakpoint-up(lg) {
+    background-color: $bg-faded;
+    .navbar-dark & {
+      background-color: transparent;
+    }
+  }
+}

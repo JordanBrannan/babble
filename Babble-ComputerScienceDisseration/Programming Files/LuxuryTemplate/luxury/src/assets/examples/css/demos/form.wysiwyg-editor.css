@@ -1,0 +1,20 @@
+/*
+ * Summernote depends on bootstrap 3
+ * so some default styles should
+ * be altered to look fine
+ * for bootstrap 4
+ */
+.note-editor.note-frame {
+  border-color: #eee; }
+
+.note-toolbar {
+  background: #f8f9fa; }
+  .note-toolbar .dropdown-menu .btn-group {
+    display: inline-block; }
+
+.note-btn {
+  padding: .5rem .75rem; }
+  .note-btn:hover {
+    background-color: #f8f9fa; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvcm0ud3lzaXd5Zy1lZGl0b3IuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7OztHQUtHO0FBQ0g7RUFDRSxtQkFBbUIsRUFBRTs7QUFFdkI7RUFDRSxvQkFBb0IsRUFBRTtFQUN0QjtJQUNFLHNCQUFzQixFQUFFOztBQUU1QjtFQUNFLHNCQUFzQixFQUFFO0VBQ3hCO0lBQ0UsMEJBQTBCLEVBQUUiLCJmaWxlIjoiZGVtb3MvZm9ybS53eXNpd3lnLWVkaXRvci5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogU3VtbWVybm90ZSBkZXBlbmRzIG9uIGJvb3RzdHJhcCAzXG4gKiBzbyBzb21lIGRlZmF1bHQgc3R5bGVzIHNob3VsZFxuICogYmUgYWx0ZXJlZCB0byBsb29rIGZpbmVcbiAqIGZvciBib290c3RyYXAgNFxuICovXG4ubm90ZS1lZGl0b3Iubm90ZS1mcmFtZSB7XG4gIGJvcmRlci1jb2xvcjogI2VlZTsgfVxuXG4ubm90ZS10b29sYmFyIHtcbiAgYmFja2dyb3VuZDogI2Y4ZjlmYTsgfVxuICAubm90ZS10b29sYmFyIC5kcm9wZG93bi1tZW51IC5idG4tZ3JvdXAge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsgfVxuXG4ubm90ZS1idG4ge1xuICBwYWRkaW5nOiAuNXJlbSAuNzVyZW07IH1cbiAgLm5vdGUtYnRuOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjhmOWZhOyB9XG4iXX0= */

@@ -1,0 +1,185 @@
+---
+title: Charts | echarts
+body_classes: demo-examples demo-charts-echarts site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+  scripts:
+    - ../assets/examples/js/demos/demos.js
+    - ../assets/examples/js/demos/charts.echarts.js
+  js_plugins:
+    - ../assets/vendor/js/echarts.min.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h1 class="demo-heading">Echarts</h1>
+    <div id="contents-wrapper">
+      <h3 id="contents-heading">Contents<i class="ml-2 fa fa-chevron-down"></i></h3>
+      <div id="contents-index">
+        <ul id="contents-list">
+          <li><a href="#echarts-line">Line Charts</a></li>
+          <li><a href="#echarts-bar">Bar Charts</a></li>
+          <li><a href="#echarts-pie">Pie Chart</a></li>
+          <li><a href="#echarts-scatter">Scatter Chart</a></li>
+          <li><a href="#echarts-other">Other</a></li>
+        </ul>
+      </div><!-- /#contents-index -->
+    </div><!-- /#contents-wrapper -->
+  </header><!-- /.demo-header -->
+  
+  <div class="docs-brief-intro font-italic mb-4">
+    For the full documentation and other examples of <strong>Echarts</strong> please
+    <a class="text-danger" href="https://ecomfe.github.io/echarts-doc/public/en/index.html">Click here!</a>
+  </div>
+
+  <div class="bd-content">
+    <h3 id="echarts-line" class="mb-4">Line Chart Examples</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Line Chart</h5>
+          <div id="echarts-line-1" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Stacked Line Chart</h5>
+          <div id="echarts-line-2" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Basic Area</h5>
+          <div id="echarts-line-3" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Stacked Area</h5>
+          <div id="echarts-line-4" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <h3 id="echarts-bar" class="my-4">Bar Chart Examples</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Vertical Bars</h5>
+          <div id="echarts-bar-1" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Horizontal Bars</h5>
+          <div id="echarts-bar-2" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">2-Direction Bars</h5>
+          <div id="echarts-bar-3" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+      
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Horizontal Stacked Bars</h5>
+          <div id="echarts-bar-4" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-12">
+        <div class="card p-3">
+          <h5 class="mb-4">Stacked Bars</h5>
+          <div id="echarts-bar-5" style="height:450px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <h3 id="echarts-pie" class="my-4">Pie Chart Examples</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Basic Pie</h5>
+          <div id="echarts-pie-1" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Doughnut Chart</h5>
+          <div id="echarts-pie-2" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Nested Pie</h5>
+          <div id="echarts-pie-3" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+      
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Rose Pie</h5>
+          <div id="echarts-pie-4" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <h3 id="echarts-scatter" class="my-4">Scatter Chart Examples</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card p-3">
+          <h5 class="mb-4">Scatter Example 1</h5>
+          <div id="echarts-scatter-1" style="height:450px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-12">
+        <div class="card p-3">
+          <h5 class="mb-4">Scatter Example 2</h5>
+          <div id="echarts-scatter-2" style="height:450px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <h3 id="echarts-other" class="my-4">Other Examples</h3>
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="card p-3">
+          <h5 class="mb-4">Gauge</h5>
+          <div id="echarts-other-1" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+      
+      <div class="col-lg-7">
+        <div class="card p-3">
+          <h5 class="mb-4">Multiple Gauge</h5>
+          <div id="echarts-other-2" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+      
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Funnel Plot</h5>
+          <div id="echarts-other-3" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+      
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Radar Chart</h5>
+          <div id="echarts-other-4" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.bd-content -->
+</div><!-- .demo-wrapper -->

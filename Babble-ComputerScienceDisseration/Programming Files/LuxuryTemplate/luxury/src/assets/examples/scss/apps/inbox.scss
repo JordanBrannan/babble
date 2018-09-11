@@ -1,0 +1,59 @@
+@import 'base';
+
+.inbox-cat-list {
+  .panel-item {
+    &.active,
+    &:focus,
+    &:hover {
+      color: #fff;
+      border-color: $brand-success;
+      background: $brand-success;
+      * { color: #fff; }
+    }
+  }
+}
+
+.mail-cat-name {
+  margin: 0;
+  font-size: 1rem;
+
+  small {
+    color: $brand-success;
+    font-size: .75rem;
+  }
+}
+
+
+.mail-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid $border-color-default;
+  padding: .75rem;
+  margin-bottom: .5rem;
+  background: #fff;
+  border-radius: $border-radius;
+  
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  .mail-item-check,
+  .mail-item-star {
+    margin-right: 1rem;
+  }
+  
+  .mail-item-star {
+    color: grayscale(200);
+    font-size: 1rem;
+    cursor: pointer;
+    &.checked,
+    &:hover {
+      color: $brand-success;
+    }
+  }
+
+  .mail-item-title {
+    margin: 0 0 auto 0;
+    font-size: 1rem;
+  }
+}

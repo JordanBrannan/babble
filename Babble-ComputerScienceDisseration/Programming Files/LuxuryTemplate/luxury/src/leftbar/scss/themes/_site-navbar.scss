@@ -1,0 +1,148 @@
+/* [12 navbar theme] */
+.navbar-light,
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      color: $brand-primary;
+
+      @include hover-focus {
+        color: $brand-success;
+      }
+    }
+
+    .open > .nav-link,
+    .active > .nav-link,
+    .nav-link.open,
+    .nav-link.active {
+      @include plain-hover-focus {
+        color: $brand-success;
+      }
+    }
+
+    .nav-link > .badge-success {
+      box-shadow: 0 0 12px $brand-success;
+    }
+    
+    .nav-link > .badge-danger {
+      box-shadow: 0 0 12px $brand-danger;
+    }
+  }
+}
+
+.navbar-light {
+  .hamburger {
+    background: darken($blue, 5%);
+  }
+
+  .navbar-btn {
+    color: #fff;
+    background: none;
+  }
+
+  .navbar-nav .nav-item {
+    border-left: 1px solid darken(#fff, 10%);
+    &:first-child { border: none; }
+  }
+
+  @include media-breakpoint-down(sm) {
+    border-bottom: none !important;
+    .hamburger {
+      background: none;
+    }
+
+    .navbar-nav .nav-item {
+      border: none !important;
+    }
+  }
+}
+
+.navbar-dark {
+  .hamburger {
+    background: none;
+  }
+
+  @include media-breakpoint-up(md) {
+    .navbar-nav {
+      .site-user img {
+        border: 1px solid rgba(#fff, .7);
+      }
+
+      .nav-link {
+        color: rgba(#fff, .7);
+        font-weight: 400;
+        @include hover-focus { color: #fff; }
+      }
+
+      .open > .nav-link,
+      .active > .nav-link,
+      .nav-link.open,
+      .nav-link.active {
+        @include plain-hover-focus {
+          color: #fff;
+        }
+      }
+
+      .nav-link > .badge-success {
+        border: 1px solid #fff;
+        background: darken($brand-success, 5%);
+      }
+      
+      .nav-link > .badge-danger {
+        border: 1px solid #fff;
+        background: darken($brand-danger, 5%);
+      }
+    }
+  }
+
+  .navbar-search {
+    .navbar-search-field {
+      border: none;
+      &:focus { border: none; }
+    }
+  }
+}
+
+// navbar-header
+.navbar-header {
+  background-color: rgba(0,0,0,0);
+  .navbar-toggler,
+  .navbar-brand, a {
+    color: #fff;
+    @include hover-focus { color: #fff; }
+  }
+
+  @include media-breakpoint-up(md) {
+    .navbar-dark & {
+      background-color: transparent;
+    }
+    
+    // navbar-light, menubar-light
+    body.menubar-dark .navbar-light & {
+      background-color: darken($blue, 5%);
+    }
+
+    // navbar-light, menubar-light
+    body.menubar-light .navbar-light & {
+      background-color: #FFF;
+      border-right: 1px solid darken(#fff, 10%);
+      box-shadow: 2px -2px 4px rgba(0,0,0,.08);
+      z-index: 2;
+      .navbar-brand, a {
+        color: $blue;
+        @include hover-focus { color: $blue; }
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  background-color: #FFF;
+  @include media-breakpoint-up(md) {
+    border-bottom: 1px solid darken(#fff, 10%);
+    background-color: $bg-faded;
+    .navbar-dark & {
+      border-bottom: none;
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+//
+// This file is imported by the (site.scss) file in each individual layout folder
+// so you should not move or remove it
+//
+
+//= bootstrap functions, variables and mixins
+@import '../../vendor/bower_components/bootstrap/scss/functions';
+@import '../../vendor/bower_components/bootstrap/scss/variables';
+@import '../../vendor/bower_components/bootstrap/scss/mixins';
+
+//= site custom variables, functions and mixins
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+
+//= core components widely used through the site
+@import '_partials/type';
+@import '_partials/utilities';
+@import '_partials/scaffolding';
+@import '_partials/circles';
+@import '_partials/card';
+@import '_partials/widget';
+@import '_partials/media';
+@import '_partials/modal';
+@import '_partials/accordion';
+@import '_partials/alerts';
+@import '_partials/buttons';
+@import '_partials/progress';
+@import '_partials/dropdown';
+@import '_partials/mega-menu';
+@import '_partials/avatars';
+@import '_partials/hamburger';
+@import '_partials/img-gallery';
+@import '_partials/text';
+@import '_partials/background';
+@import '_partials/poster';
+@import '_partials/custom-form-elements';
+
+// components shared between all layouts
+@import '_shared-components/navbar-search';
+@import '_shared-components/side-panel';
+
+// svg-sprites SCSS
+@import '../svg-sprite/sprite';

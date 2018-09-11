@@ -1,0 +1,471 @@
+---
+title: Documentation
+body_classes: demo-examples documentation-page site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+    - ../assets/examples/css/demos/documentation.css
+  scripts:
+    - ../assets/examples/js/demos/demos.js
+    - ../assets/examples/js/demos/documentation.js
+  css_plugins:
+    - https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css
+  js_plugins:
+    - https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h1 class="demo-heading">Documentation</h1>
+    <div id="contents-wrapper">
+      <h3 id="contents-heading">Contents<i class="ml-2 fa fa-chevron-down"></i></h3>
+      <div id="contents-index">
+        <ul id="contents-list">
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#structure">File Structure</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#commands">Gulp Commands</a></li>
+        </ul>
+      </div><!-- /#contents-index -->
+    </div><!-- /#contents-wrapper -->
+  </header><!-- /.demo-header -->
+  
+  <section id="intro">  
+    <h2 class="mb-4">Introduction</h2>
+    <div class="ml-3 mb-4">
+      <h5 class="mb-4">- About</h5>
+      Luxury is a premium adman dashboard template based on the latest version of bootstrap (4) framework
+      <h5 class="my-4">- Terminology</h5>
+      <ul>
+        <li>When we use the word <strong>Layout</strong> we refer to the different structures of the template</li>
+        <li><strong>layout directory</strong> or <strong>${layout}</strong> refers to one of the following: basic, iconbar, leftbar or topbar directory</li>
+        <li>The word <strong>Assets</strong> refers to (css, images, js, svg, etc..) files</li>
+        <li><strong>Working Layout directory</strong> The ${layout} against which <strong>gulp tasks</strong> are executed</li>
+      </ul>
+      <h5 class="my-4">- Features</h5>
+      <ul>
+        <li>Built using the latest version of <a href="http://v4-alpha.getbootstrap.com/">bootstrap</a> (version 4.0.*)</li>
+        <li>Well structured and organized files and code</li>
+        <li>Uses <a href="http://sass-lang.com/">Sass</a> for preprocessing CSS</li>
+        <li>Uses the powerful task management system<a href="http://gulpjs.com/">Gulp</a></li>
+        <li><a href="https://bower.io/">Bower</a> and <a href="https://www.npmjs.com/">NPM</a> for dependency management.</li>
+        <li>We use <a href="http://assemble.io/">Assemble</a> for building HTML markup.</li>
+        <li>Up till now Luxury has 4 different layouts (basic, iconbar, leftbar and topbar)</li>
+        <li>Light and Dark menubar themes</li>
+        <li>Unlimited number of skins for the navbar</li>
+        <li>Dozen of pre-built pages for common uses</li>
+        <li>Hundreds of UI components (icons, widgets)</li>
+        <li>Many useful javascript and css libraries for common tasks</li>
+        <li>Responsive and mobile friendly structure</li>
+        <li>All source and compiled files are included in the package</li>
+        <li>We include our Gulp tasks for you to use in your development</li>
+        <li>In the coming releases dozens of feature will be introduced</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section id="structure" class="mt-5">
+    <h2 class="mb-4">File Structure</h2>
+    <div class="ml-3 mb-4">
+      When You unzip Luxury package you will find the following folders and files
+    </div>
+    <div id="file_structure" class="ml-3 mb-4">
+      <ul>
+        <li data-jstree='{"opened":true}'>Luxury
+          <ul>
+            <li>config
+              <ul>
+                <li data-jstree='{"icon": "fa fa-file"}'>config.js</li>
+                <li data-jstree='{"icon": "fa fa-file"}'>site.js</li>
+              </ul>
+            </li>
+            <li>gulp-tasks/</li>
+            <li>dist
+              <ul>
+                <li data-jstree='{"opened": true}'>assets
+                  <ul>
+                    <li>global
+                      <ul>
+                        <li>css</li>
+                        <li>js</li>
+                        <li>svg</li>
+                        <li>svg-sprite</li>
+                        <li>images</li>
+                      </ul>
+                    </li>
+                    <li>examples
+                      <ul>
+                        <li>css</li>
+                        <li>js</li>
+                      </ul>
+                    </li>
+                    <li>vendor
+                      <ul>
+                        <li>js</li>
+                        <li>css</li>
+                        <li>bower_components</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li data-jstree='{"opened": true}'>basic
+                  <ul>
+                    <li>css</li>
+                    <li>js</li>
+                    <li data-jstree='{"icon": "fa fa-file"}'>*.html</li>
+                  </ul>
+                </li>
+                <li>iconbar
+                  <ul>
+                    <li>css</li>
+                    <li>js</li>
+                    <li data-jstree='{"icon": "fa fa-file"}'>*.html</li>
+                  </ul>
+                </li>
+                <li>leftbar
+                  <ul>
+                    <li>css</li>
+                    <li>js</li>
+                    <li data-jstree='{"icon": "fa fa-file"}'>*.html</li>
+                  </ul>
+                </li>
+                <li>topbar
+                  <ul>
+                    <li>css</li>
+                    <li>js</li>
+                    <li data-jstree='{"icon": "fa fa-file"}'>*.html</li>
+                  </ul>
+                </li>
+                <li data-jstree='{"icon": "fa fa-file"}'>index.html</li>
+              </ul>
+            </li>
+            <li>src
+              <ul>
+                <li data-jstree='{"opened": true}'>assets
+                  <ul>
+                    <li>global
+                      <ul>
+                        <li>css</li>
+                        <li>js</li>
+                        <li>scss</li>
+                        <li>svg</li>
+                        <li>svg-sprite</li>
+                        <li>images</li>
+                      </ul>
+                    </li>
+                    <li>examples
+                      <ul>
+                        <li>css</li>
+                        <li>js</li>
+                        <li>scss</li>
+                      </ul>
+                    </li>
+                    <li>vendor
+                      <ul>
+                        <li>js</li>
+                        <li>css</li>
+                        <li>scss</li>
+                        <li>bower_components</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li data-jstree='{"opened": true}'>templates
+                  <ul>
+                    <li>layouts
+                      <ul>
+                        <li data-jstree='{"icon": "fa fa-file"}'>base.hbs</li>
+                        <li data-jstree='{"icon": "fa fa-file"}'>simple.hbs</li>
+                      </ul>
+                    </li>
+                    <li>partials
+                      <ul><li data-jstree='{"icon": "fa fa-file"}'>*.hbs</li></ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>views
+                  <ul>
+                    <li data-jstree='{"icon": "fa fa-file"}'>**/*.hbs</li>
+                  </ul>
+                </li>
+                <li data-jstree='{"opened": true}'>basic
+                  <ul>
+                    <li>css</li>
+                    <li>scss</li>
+                    <li>js</li>
+                    <li>templates
+                      <ul>
+                        <li>layout
+                          <ul>
+                            <li data-jstree='{"icon": "fa fa-file"}'>basic.hbs</li>
+                          </ul>
+                        </li>
+                        <li>partials
+                          <ul>
+                            <li data-jstree='{"icon": "fa fa-file"}'>site-menubar.hbs</li>
+                            <li data-jstree='{"icon": "fa fa-file"}'>site-navbar.hbs</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"icon": "fa fa-file"}'>*.html</li>
+                  </ul>
+                </li>
+                <li>iconbar
+                  <ul>
+                    <li>css</li>
+                    <li>scss</li>
+                    <li>js</li>
+                    <li>templates
+                    <ul>
+                      <li>layout
+                        <ul>
+                          <li data-jstree='{"icon": "fa fa-file"}'>iconbar.hbs</li>
+                        </ul>
+                      </li>
+                      <li>partials
+                        <ul>
+                          <li data-jstree='{"icon": "fa fa-file"}'>site-menubar.hbs</li>
+                          <li data-jstree='{"icon": "fa fa-file"}'>site-navbar.hbs</li>
+                        </ul>
+                      </li>
+                    </ul>
+                    </li>
+                    <li data-jstree='{"icon": "fa fa-file"}'>*.html</li>
+                  </ul>
+                </li>
+                <li>leftbar
+                  <ul>
+                    <li>css</li>
+                    <li>scss</li>
+                    <li>js</li>
+                    <li>templates
+                    <ul>
+                      <li>layout
+                        <ul>
+                          <li data-jstree='{"icon": "fa fa-file"}'>leftbar.hbs</li>
+                        </ul>
+                      </li>
+                      <li>partials
+                        <ul>
+                          <li data-jstree='{"icon": "fa fa-file"}'>site-menubar.hbs</li>
+                          <li data-jstree='{"icon": "fa fa-file"}'>site-navbar.hbs</li>
+                        </ul>
+                      </li>
+                    </ul>
+                    </li>
+                    <li data-jstree='{"icon": "fa fa-file"}'>*.html</li>
+                  </ul>
+                </li>
+                <li>topbar
+                  <ul>
+                    <li>css</li>
+                    <li>scss</li>
+                    <li>js</li>
+                    <li>templates
+                      <ul>
+                        <li>layout
+                          <ul>
+                            <li data-jstree='{"icon": "fa fa-file"}'>topbar.hbs</li>
+                          </ul>
+                        </li>
+                        <li>partials
+                          <ul>
+                            <li data-jstree='{"icon": "fa fa-file"}'>site-menubar.hbs</li>
+                            <li data-jstree='{"icon": "fa fa-file"}'>site-navbar.hbs</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"icon": "fa fa-file"}'>*.html</li>
+                  </ul>
+                </li>
+                <li data-jstree='{"icon": "fa fa-file"}'>index.html</li>
+              </ul>
+            </li>
+            <li data-jstree='{"icon": "fa fa-file"}'>bower.json</li>
+            <li data-jstree='{"icon": "fa fa-file"}'>package.json</li>
+            <li data-jstree='{"icon": "fa fa-file"}'>gulpfile.js</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="ml-3 mb-4">
+      <h5 class="my-4">- Notes</h5>
+      <ul>
+        <li>the <strong>dist</strong>directory is not included in the downloaded package, it will be generated when you run the build commands mentioned in <a href="#build-section">Installation section</a> below.</li>
+        <li>config/gulp.js configuration options for <strong>gulp tasks</strong></li>
+        <li>config/site.json contains data used in <strong>handlebars templates</strong> by <strong>assemble</strong></li>
+        <li>src/ directory contains the source <strong>raw</strong>files</li>
+        <li>dist/ directory contains the minified / optimized and ready for production code</li>
+        <li>assets/ directory contains assets i.e (css, images, scripts, etc..) used by all layouts</li>
+        <li>templates/ directory contains the base layout (base.hbs) that is used as a parent for all layouts, and contains the common partials</li>
+        <li>views/ this directory contains the views (the  actual content) files</li>
+        <li>Each layout directory contains its own specific (custom) assets and templates. and contains compiled HTML files of that layout</li>
+        <li>gulp-tasks directory contains gulp tasks that are imported into <strong>gulpfile.js</strong></li>
+        <li>The settings in <strong>config/gulp.js</strong> are passed to each file in <strong>gulp-tasks</strong> directory</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="installation" class="mt-5">
+    <h2 class="mb-4">Installation</h2>
+    <div class="ml-3 mb-4">
+      <h5 class="mb-4">- Zero Installation</h5>
+      <p>We include all compiled files to be ready for use. if you don't need build tools, you don't have to install anything</p>
+    </div>
+    <div class="ml-3 mb-4">
+      <h5 class="mb-4" id="build-section">- Using Build Tools</h5>
+      <p>We use gulp for build processes. You can optionally use it, Compiled and ready files are included as mentioned above.</p>
+      <p>You need node.js, npm and gulp installed on your machine in order to use our build utilities</p>
+      <div class="alert alert-warning">
+        Before installation you should set the gulp settings in <strong>config/gulp.js</strong> default setting will be used if you didn't.
+      </div>
+      <h5 class="my-4">- Configuration</h5>
+      <p class="font-italic mb-4">
+        All the following configuration options are in the <strong>config/gulp.js</strong>file
+      </p>
+      <ul>
+        <li><code>workingLayout</code>set this to one of the following layout names(basic, iconbar, leftbar, topbar)</li>
+        <li class="text-danger">All gulp tasks that deal with the ${layout} do their work on the layout specified in <code>workingLayout</code></li>
+        <li><code>srcDir</code>change this value if you changed the <strong>src</strong> directory name</li>
+        <li><code>distDir</code>change this value if you want another name for the <strong>dist</strong> directory</li>
+        <li><code>assetsDir</code>refers to <strong>src/assets</strong>directory</li>
+        <li class="text-danger">all <strong>gulp tasks</strong>relies on those settings so be specific and don't change theme unless you have a good reason</li>
+      </ul>
+      <h5 class="my-4">- Installation</h5>
+      <p>after configuration run the following commands</p>
+      <ul>
+        <li>
+          <code>npm install</code> installs <strong>npm</strong> to your machine
+        </li>
+        <li>
+          <code>npm install gulp -g</code> installs <strong>gulp</strong> globally on the systems
+        </li>
+        <li>
+          <code>npm install</code>run this command after navigating to the main directory of Luxury
+        </li>
+        <li>
+          <code>gulp build</code> builds the <strong>dist</strong> folder form the <strong>src</strong> files
+        </li>
+        <li>
+          <code>npm start</code>or <code>gulp serve:dist</code> to run a local server from the <strong>dist</strong> directory
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section id="commands" class="mt-5">
+    <h2 class="mb-4">Gulp Commands</h2>
+    <div class="ml-3 mb-4">
+      <h5 class="mb-4">- SASS Tasks</h5>
+      <ul>
+        <li>
+          <code>gulp sass</code>compiles <strong>.scss</strong> files from the working layout directory <strong>${layout}/scss</strong> to <strong>${layout}/css</strong>
+        </li>
+        <li>
+          <code>gulp sass:global</code>compiles <strong>.scss</strong> files from <strong>assets/global/scss</strong> to <strong>assets/global/css</strong>
+        </li>
+        <li>
+          <code>gulp sass:examples</code>compiles <strong>.scss</strong> files from <strong>assets/examples/scss</strong> to <strong>assets/examples/css</strong>
+        </li>
+        <li>
+          <code>gulp sass:vendor</code>compiles <strong>.scss </strong> files from <strong>assets/vendor/scss</strong> to <strong>assets/vendor/css</strong>
+        </li>
+        <li>
+          <code>gulp sass:all</code>runs all the above <strong>sass</strong> tasks i.e. <strong>(sass, sass:global, sass:examples, sass:vendor)</strong> at once.
+        </li>
+      </ul>
+    </div>
+
+    <div class="ml-3 mb-4">
+      <h5 class="mb-4">- HTML Tasks</h5>
+      <ul>
+        <li>
+          <code>gulp html</code>builds the <strong>HTML</strong> files form views to the working layout directory <strong>${layout}/</strong>
+        </li>
+        <li>
+          <code>gulp html:all</code>Assembles all layouts at once
+        </li>
+      </ul>
+    </div>
+
+    <div class="ml-3 mb-4">
+      <h5 class="mb-4">- Watch Tasks</h5>
+      <ul>
+        <li>
+          <code>gulp watch:sass</code>watches <strong>.scss</strong> files in <strong>global, examples, vendor and ${layout}/scss</strong> directories and reloads the browser.
+        </li>
+        <li>
+          <code>gulp watch:scripts</code>watches <strong>.js</strong> files in <strong>global, examples, vendor and ${layout}/js</strong> directories and reloads the browser.
+        </li>
+        <li>
+          <code>gulp watch:html</code>watches <strong>.hbs(handlebars)</strong> files in <strong>views, templates, and ${layout}/templates</strong> directories and reloads the browser.
+        </li>
+        <li>
+          <code>gulp watch</code>runs all the above <strong>watch:*</strong> tasks at once
+        </li>
+      </ul>
+    </div>
+
+    <div class="ml-3 mb-4">
+      <h5 class="mb-4">- Copy Tasks</h5>
+      <ul>
+        <li>
+          <code>gulp copy:bower</code>copies the main files from the <strong>/bower_components</strong> directory to <strong>src/assets/vendor</strong> directory
+        </li>
+      </ul>
+    </div>
+
+    <div class="ml-3 mb-4">
+      <h5 class="mb-4">- Clean Tasks</h5>
+      <ul>
+        <li>
+          <code>gulp clean:bower</code>removes the <strong>assets/vendor/bower_components</strong> directory
+        </li>
+        <li>
+          <code>gulp clean:dist</code>removes the the dist directory
+        </li>
+        <li>
+          <code>gulp clean:html</code>removes all <strong>${layout}/*.html</strong> files
+        </li>
+        <li>
+          <code>gulp clean:html:all</code>removes <strong>*.html</strong> files from all layout directories i.e. (leftbar, topbar, basic and iconbar, etc..).
+        </li>
+        <li>
+          <code>gulp clean:css</code>removes all <strong>${layout}/css/*.css</strong> files
+        </li>
+        <li>
+          <code>gulp clean:css:global</code>removes all <strong>assets/global/css/*.css</strong> files
+        </li>
+        <li>
+          <code>gulp clean:examples</code>removes all <strong>assets/examples/css/*.css</strong> files
+        </li>
+        <li>
+          <code>gulp clean:css:all</code>runs all <strong>clean:css, clean:css:global, clean:css:examples</strong>
+        </li>
+      </ul>
+    </div>
+
+    <div class="ml-3 mb-4">
+      <h5 class="mb-4">- Other Tasks</h5>
+      <ul>
+        <li>
+          <code>gulp svg</code>generates an <strong>svg sprite</strong> file from the svg files in <strong>assets/global/svg</strong> and put it into <strong>svg-sprite</strong>directory
+        </li>
+        <li>
+          <code>gulp serve</code>runs the <strong>gulp watch</strong> task and runs a local server that serves the files in <strong>/src</strong>directory
+        </li>
+        <li>
+          <code>gulp serve:dist</code>serves the files in <strong>/dist</strong>directory
+        </li>
+        <li>
+          <code>gulp build</code>minifies files and copy assets and the working layout to the <strong>dist/</strong>folder
+        </li>
+        <li>
+          <code>gulp build:all</code>minifies all assets and builds all layouts at once.
+        </li>
+      </ul>
+    </div>
+  </section>
+</div><!-- /.demo-wrapper -->

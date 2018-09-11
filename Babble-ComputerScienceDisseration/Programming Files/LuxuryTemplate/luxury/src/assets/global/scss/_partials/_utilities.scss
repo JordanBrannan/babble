@@ -1,0 +1,185 @@
+// Position
+
+.pos-s {
+	position: static !important;
+}
+
+.pos-r {
+	position: relative !important;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.badge-circle {
+  border-radius: 50%;
+}
+
+// border-radius
+.border-radius-0 {
+  border-radius: 0 !important;
+}
+
+.border-radius-1 {
+  border-radius: $border-radius !important;
+}
+
+// Font Size
+.fz-base {
+  font-size: $font-size-base !important;
+}
+
+.fz-lg {
+  font-size: $font-size-lg !important;
+}
+
+.fz-sm {
+  font-size: $font-size-sm !important;
+}
+
+.fz-xs {
+  font-size: .75rem !important;
+}
+
+
+// line-height
+.lh-2 {
+  line-height: 2 !important;
+}
+
+
+// font-weight property
+.font-weight-200 {
+  font-weight: 200 !important;
+}
+
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+// Borders
+
+.border-a-0 {
+  border: none !important;
+}
+
+.border-a-1 {
+  border: 1px solid $border-color-default !important;
+}
+
+.border-a-2 {
+  border: 2px solid $border-color-default !important;
+}
+
+.border-t-0 {
+  border-top: none !important;
+}
+
+.border-t-1 {
+  border-top: 1px solid $border-color-default !important;
+}
+
+.border-t-2 {
+  border-top: 2px solid $border-color-default !important;
+}
+
+.border-r-0 {
+  border-right: none !important;
+}
+
+.border-r-1 {
+  border-right: 1px solid $border-color-default !important;
+}
+
+.border-r-2 {
+  border-right: 2px solid $border-color-default !important;
+}
+
+.border-b-0 {
+  border-bottom: none !important;
+}
+
+.border-l-0 {
+  border-left: none !important;
+}
+
+.border-b-1 {
+  border-bottom: 1px solid $border-color-default !important;
+}
+
+.border-b-2 {
+  border-bottom: 2px solid $border-color-default !important;
+}
+
+.border-l-1 {
+  border-left: 1px solid $border-color-default !important;
+}
+
+.border-l-2 {
+  border-left: 2px solid $border-color-default !important;
+}
+
+.border-color-primary {
+  border-color: $brand-primary !important;
+}
+
+.border-color-success {
+  border-color: $brand-success !important;
+}
+
+.border-color-warning {
+  border-color: $brand-warning !important;
+}
+
+.border-color-danger {
+  border-color: $brand-danger !important;
+}
+
+// Display
+.d-table {
+  display: table !important;
+
+  & > * {
+    display: table-cell !important;
+  }
+}
+
+// Images
+.img-full {
+  width: 100% !important;
+  height: auto;
+  display: block;
+}
+
+// transformations
+.flip-y {
+  transform: rotateY(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+// Modals
+.modal-md {
+  @media(min-width: map-get($grid-breakpoints, md)) {
+    max-width: 700px;
+  }
+}
+
+// Responsive visibility utilities
+
+@each $bp in map-keys($grid-breakpoints) {
+  .hidden-#{$bp}-up {
+    @include media-breakpoint-up($bp) {
+      display: none !important;
+    }
+  }
+  .hidden-#{$bp}-down {
+    @include media-breakpoint-down($bp) {
+      display: none !important;
+    }
+  }
+}

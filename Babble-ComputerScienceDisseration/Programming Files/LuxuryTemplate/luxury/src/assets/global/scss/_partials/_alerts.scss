@@ -1,0 +1,49 @@
+.alert {
+    border-radius: 0;
+    .close {
+        opacity: .3;
+    }
+}
+
+.alert-rounded {
+    border-radius: $border-radius;
+}
+
+.alert-outline {
+    background: none;
+    &.alert-info {
+        color: $brand-info;
+        border-color: $brand-info;
+        .close {
+            color: $brand-info;
+        }
+    }
+
+    &.alert-success {
+        color: $brand-success;
+        border-color: $brand-success;
+        .close {
+            color: $brand-success;
+        }
+    }
+
+    &.alert-warning {
+        color: $brand-warning;
+        border-color: $brand-warning;
+        .close {
+            color: $brand-warning;
+        }
+    }
+
+    &.alert-danger {
+        color: $brand-danger;
+        border-color: $brand-danger;
+        .close {
+            color: $brand-danger;
+        }
+    }
+
+    .close {
+        opacity: 1;
+    }
+}

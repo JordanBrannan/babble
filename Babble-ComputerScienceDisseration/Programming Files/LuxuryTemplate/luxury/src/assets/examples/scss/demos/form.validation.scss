@@ -1,0 +1,21 @@
+@import '../base';
+
+.parsley-errors-list {
+    padding: 0;
+    margin: .5rem 0;
+    list-style-type: none;
+    li {
+        color: $brand-danger;
+    }
+
+    &:not(.filled) {
+        display: none;
+    }
+}
+
+.form-section {
+    display: none;
+    &.current {
+        display: block;
+    }
+}

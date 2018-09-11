@@ -1,0 +1,145 @@
+---
+title: Charts | Flot
+body_classes: demo-examples demo-charts-flot site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+  scripts:
+    - ../assets/examples/js/demos/demos.js
+    - ../assets/examples/js/demos/charts.flot.js
+  js_plugins:
+    - ../assets/vendor/flot/jquery.flot.min.js
+    - ../assets/vendor/flot/jquery.flot.pie.min.js
+    - ../assets/vendor/flot/jquery.flot.time.min.js
+    - ../assets/vendor/flot/jquery.flot.stack.min.js
+    - ../assets/vendor/flot/jquery.flot.resize.min.js
+    - ../assets/vendor/flot/jquery.flot.tooltip.min.js
+    - ../assets/vendor/flot/jquery.flot.categories.min.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h1 class="demo-heading">Flot Charts</h1>
+    <div id="contents-wrapper">
+      <h3 id="contents-heading">Contents<i class="ml-2 fa fa-chevron-down"></i></h3>
+      <div id="contents-index">
+        <ul id="contents-list">
+          <li><a href="#flot-line">Line Charts</a></li>
+          <li><a href="#flot-realtime-example">RealTime Chart</a></li>
+          <li><a href="#flot-bar">Bar Charts</a></li>
+          <li><a href="#flot-pie">Pie Charts</a></li>
+        </ul>
+      </div><!-- /#contents-index -->
+    </div><!-- /#contents-wrapper -->
+  </header><!-- /.demo-header -->
+  
+  <div class="docs-brief-intro font-italic mb-4">
+    For the full documentation and other examples of <strong>Flot Charts</strong> please
+    <a class="text-danger" href="http://www.flotcharts.org/">Click here!</a>
+  </div>
+
+  <div class="bd-content">
+    <h3 id="flot-line" class="mb-4">Line Charts</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Basic Line</h5>
+          <div id="flot-line-basic" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Area</h5>
+          <div id="flot-line-area" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <h3 id="flot-realtime-example" class="my-4">Realtime Examples</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card p-3">
+          <h5 class="mb-4">Realtime Data</h5>
+          <div id="flot-realtime" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+    
+    <h3 id="flot-bar" class="my-4">Bar Charts</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Basic Bar</h5>
+          <div id="flot-bar-basic" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+      
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Horizontal Bars</h5>
+          <div id="flot-bar-horizontal" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+      
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Categories</h5>
+          <div id="flot-bar-categories" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Stacked Bars</h5>
+          <div id="flot-bar-stacked" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <h3 id="flot-pie" class="my-4">Pie Chats</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Default Options</h5>
+          <div id="flot-pie-1" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Combined Slice</h5>
+          <div id="flot-pie-2" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Label Formatter</h5>
+          <div id="flot-pie-3" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Rectangular Pie</h5>
+          <div id="flot-pie-4" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Donut Hole</h5>
+          <div id="flot-pie-5" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Interactivity</h5>
+          <div id="flot-pie-6" style="height:300px;"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.bd-content -->
+</div><!-- .demo-wrapper -->

@@ -1,0 +1,330 @@
+@import '../vendor/bower_components/bootstrap/scss/functions';
+@import '../vendor/bower_components/bootstrap/scss/variables';
+@import '../vendor/bower_components/bootstrap/scss/mixins';
+@import '../global/scss/variables';
+@import '../global/scss/functions';
+@import '../global/scss/mixins';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');
+
+// overwriting variables
+$bg-faded: #fbfbfb;
+$border-color-default: #e3e2e2;
+
+body {
+  height: 100%;
+  overflow-y: hidden;
+  color: $brand-primary;
+  font-weight: 300;
+  font-size: .875rem;
+  position: relative;
+
+  font-family: 'Roboto', sans-serif, serif;
+  &.loading-done {
+    overflow-y: auto;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: 100px;
+  }
+}
+
+.container {
+  max-width: 992px;
+}
+
+.flip-y {
+  transform: rotateY(180deg);
+}
+
+.fz-base {
+  font-size: $font-size-base;
+}
+
+.index-wrapper {
+  opacity: 0;
+  transition: opacity .75s;
+  body.loading-done & {
+    opacity: 1;
+  }
+}
+
+#loading-div {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 9999;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
+  background-color: #f3f3f3;
+  
+  body.loading-done & {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  img {
+    display: block;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+  }
+}
+
+.index-nav {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  
+  > .container {
+    display: flex;
+    align-items: center;
+  }
+
+  @include media-breakpoint-down(sm) {
+    > .container {
+      padding: 2rem 0;
+      flex-direction: column;
+      > div {
+        margin-bottom: 1.5rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    > .container {
+      height: 80px;
+      justify-content: space-between;
+    }
+  }
+
+  .index-links {
+    a {
+      padding: .5rem 1rem;
+      border-radius: $border-radius;
+      &.active {
+        background: $brand-primary;
+        color: #fff;
+      }
+    }
+  }
+
+  .btn {
+    border-radius: 500px;
+    font-size: 1em;
+    line-height: 1;
+    padding: .5em 2.25em;
+  }
+}
+
+
+.index-header {
+  padding-top: 60px;
+  background-color: $bg-faded;
+  @include media-breakpoint-up(lg) {
+    padding-top: 120px;
+    background: url("images/hero-bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .floating-img {
+    margin-top: 5rem;
+    border-radius: 5px;
+    overflow: hidden;
+    a {
+      display: block;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .floating-img {
+      margin-top: 0;
+      transform: translateY(100px);
+      box-shadow: -8px 8px 24px rgba(0,0,0,.08);
+      transition: box-shadow .8s;
+      &:hover {
+        box-shadow: -16px 16px 36px rgba(0,0,0,.3);
+      }
+    }
+  }
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-heading {
+  font-family: 'Raleway', sans-serif, serif;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+  h3 {
+    text-transform: uppercase;
+  }
+  p { 
+    font-size: 1rem;
+    line-height: 1.8;
+    color: $text-muted;
+  }
+}
+
+// features-section
+#features-section {
+  .feature-block {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 24px rgba(0,0,0,0.08);
+    transition: box-shadow .7s;
+    &:hover {
+      box-shadow: -6px 6px 24px rgba(0,0,0,0.2);
+    }
+    margin-bottom: 1.5rem;
+    h6 {
+      font-weight: 400;
+    }
+  }
+}
+
+#layouts-section {
+  @include media-breakpoint-up(lg) {
+    padding-top: 200px;
+  }
+  background-color: $bg-faded;
+  border-top: 1px solid $border-color-default;
+  
+  .layout-demo {
+    box-shadow: 0 0 24px rgba(0,0,0,.08);
+    background: #fff;
+    border: 1px solid $border-color-default;
+    border-radius: $border-radius;
+    transition: border-color .5s;
+    overflow: hidden;
+    margin: 0 auto 1.5rem;
+  }
+
+  .demo-img {
+    overflow: hidden;
+    position: relative;
+    display: block;
+  }
+
+  .demo-overlay {
+    background-color: rgba(#fff, .1);
+    transition: background-color .5s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif, serif;
+  }
+  
+  .overlay-badge {
+    display: inline-block;
+    padding: .5rem 2rem;
+    border-radius: 500px;
+    background-color: $brand-primary;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+
+  .demo-options {
+    display: flex;
+    a {
+      border-top: 1px solid $border-color-default;
+      transition: border-color .5s;
+      height: 60px;
+      flex: 0 0 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    a + a {
+      border-left: 1px solid $border-color-default;
+    }
+  }
+
+  .layout-demo:hover {
+    border-color: $brand-success;
+    .demo-overlay {
+      background-color: rgba(#fff, .8);
+    }
+
+    .overlay-badge {
+      opacity: .8;
+    }
+
+    a {
+      border-color: $brand-success;
+    }
+  }
+}
+
+#hot-section {
+  background: linear-gradient( -90deg, rgb(96,200,76) 0%, rgb(57,82,123) 100%);
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: 'Raleway', sans-serif, serif;
+  .badge {
+    background: rgba(0,0,0,.4);
+    padding: .5rem 1rem;
+    margin-right: 2rem;
+    border-radius: 500px;
+    font-size: 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#workflow-section {
+  .tool-demo {
+    margin-bottom: 1.5rem;
+    background: #fff;
+    border: 1px solid $border-color-default;
+    border-radius: $border-radius;
+    text-align: center;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color .5s;
+    &:hover {
+      border-color: $brand-success;
+    }
+  }
+  img {
+    max-height: 120px;
+  }
+}
+.index-footer {
+  background-color: $bg-faded;
+  border-top: 1px solid $border-color-default;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

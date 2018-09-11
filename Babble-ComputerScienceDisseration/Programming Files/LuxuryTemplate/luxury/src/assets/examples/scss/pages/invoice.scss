@@ -1,0 +1,43 @@
+@import '../base';
+
+.invoice-wrapper.invoice-bg {
+  background: linear-gradient($brand-success 400px, #fff 0, #fff 70%);
+}
+
+
+.invoice-inner {
+  padding: 1.5rem;
+  @include media-breakpoint-down(xl) {
+    padding: 3rem;
+  }
+}
+
+.invoice-logo svg {
+  transform: rotateY(180deg);
+}
+
+.page-invoice .table {
+  th, td {
+    white-space: nowrap;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.invoice-btn {
+  height: 45px;
+  border-radius: 0;
+
+  @include media-breakpoint-down(xs) {
+    &:first-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.signature {
+  @import 'https://fonts.googleapis.com/css?family=Great+Vibes';
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Great Vibes', cursive;
+}

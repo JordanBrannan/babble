@@ -1,0 +1,33 @@
+---
+layout: base.hbs
+---
+<body class="menubar-top menubar-light{{#if body_classes}} {{body_classes}}{{/if}}">
+  <!--[if lt IE 10]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <nav class="site-navbar navbar fixed-top navbar-expand-lg navbar-light bg-blue">
+    {{> site-navbar}}
+  </nav><!-- /.site-navbar -->
+
+  <aside id="side-panel" class="side-panel">
+    {{> side-panel}}
+  </aside><!-- /.side-panel -->
+
+  <header class="site-header">
+    {{> site-header}}
+  </header><!-- /.site-header -->
+
+  <aside class="site-menubar">
+    {{> site-menubar}}
+  </aside><!-- /.site-menubar -->
+
+  <main class="site-main">
+    <div class="site-content">
+{% body %}
+    </div><!-- /.site-content -->
+    
+    <footer class="site-footer">
+      {{> site-footer}}
+    </footer><!-- /.site-footer -->
+  </main><!-- /.site-main -->
+  

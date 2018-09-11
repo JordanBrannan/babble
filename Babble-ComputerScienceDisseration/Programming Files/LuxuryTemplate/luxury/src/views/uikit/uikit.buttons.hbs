@@ -1,0 +1,180 @@
+---
+title: Buttons Demo
+body_classes: demo-examples demo-uikit-buttons site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h2 class="demo-heading">Buttons</h2>
+  </header><!-- /.demo-header -->
+
+  <div class="docs-brief-intro font-italic mb-4">
+    Button size, color and shape variations.
+  </div>
+
+  <div class="card">
+    <div class="mb-5">
+      <h4 class="mb-4">Basic Examples</h4>
+      <p>
+        Simply add <code>.btn</code> to a button or a tag and use one of the coloring classes for example <code>.btn-primary</code>
+      </p>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-light">light</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-link">Link</button>
+    </div>
+    
+    <div class="row mb-5">
+      <div class="col-lg-7">
+        <h4 class="mb-4">Outline buttons</h4>
+        <p>
+          Instead of <code>btn-primary</code> use <code>.btn-outline-primary</code>
+        </p>
+        <button class="btn btn-outline-primary">Primary</button>
+        <button class="btn btn-outline-secondary">Secondary</button>
+        <button class="btn btn-outline-success">Success</button>
+        <button class="btn btn-outline-info">Info</button>
+        <button class="btn btn-outline-danger">Danger</button>
+        <button class="btn btn-outline-warning">Warning</button>
+      </div><!-- /.col -->
+
+      <div class="col-lg-5">
+        <h4 class="mb-4">Rounded buttons</h4>
+        <p>
+          Add <code>btn-rounded</code>
+        </p>
+        <div class="mb-4">
+          <button class="btn btn-rounded btn-warning">Solid Rounded</button>
+          <button class="btn btn-rounded btn-outline-warning">Outline Rounded</button>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    
+    <div class="mb-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4 class="mb-4">Icons Buttons</h4>
+          <p>
+            For icon buttons use <code>.btn .btn-icon</code> and use one of the brand backgrounds like <code>.bg-facebook</code>
+          </p>
+          <a href="#" class="btn btn-icon btn-facebook m-2">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-twitter m-2">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-google-plus m-2">
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-flickr m-2">
+            <i class="fa fa-flickr"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-linkedin m-2">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-tumblr m-2">
+            <i class="fa fa-tumblr"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-youtube m-2">
+            <i class="fa fa-youtube"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-dribbble m-2">
+            <i class="fa fa-dribbble"></i>
+          </a>
+        </div><!-- /.col -->
+
+        <div class="col-lg-6">
+          <h4 class="mb-4">Flipping Icons Buttons</h4>
+          <p>
+            For flipping social icon buttons use<code>.btn .btn-icon .btn-icon-flip</code>
+            and use the inner tag <code>&lt;i&gt;</code> twice. Inspect element to see the usage!
+          </p>
+          <a href="#" class="btn btn-icon btn-icon-flip text-white m-2">
+            <i class="fa fa-facebook bg-eee"></i>
+            <i class="fa fa-facebook bg-facebook"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-icon-flip text-white m-2">
+            <i class="fa fa-twitter bg-eee"></i>
+            <i class="fa fa-twitter bg-twitter"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-icon-flip text-white m-2">
+            <i class="fa fa-google-plus bg-eee"></i>
+            <i class="fa fa-google-plus bg-google-plus"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-icon-flip text-white m-2">
+            <i class="fa fa-flickr bg-eee"></i>
+            <i class="fa fa-flickr bg-flickr"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-icon-flip text-white m-2">
+            <i class="fa fa-linkedin bg-eee"></i>
+            <i class="fa fa-linkedin bg-linkedin"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-icon-flip text-white m-2">
+            <i class="fa fa-tumblr bg-eee"></i>
+            <i class="fa fa-tumblr bg-tumblr"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-icon-flip text-white m-2">
+            <i class="fa fa-youtube bg-eee"></i>
+            <i class="fa fa-youtube bg-youtube"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-icon-flip text-white m-2">
+            <i class="fa fa-dribbble bg-eee"></i>
+            <i class="fa fa-dribbble bg-dribbble"></i>
+          </a>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div>
+
+    <div class="mb-5">
+      <h4 class="mb-4">Disabled State</h4>
+      <p>
+        Make buttons look inactive by adding the disabled boolean attribute to any <code>&lt;button&gt;</code> element.<br>
+        <code>&lt;a&gt;</code> s don’t support the disabled attribute, so you must add the <code>.disabled</code> class to make it visually appear disabled.
+      </p>
+      <button class="btn btn-primary" disabled>Primary</button>
+      <button class="btn btn-light" disabled>Secondary</button>
+      <button class="btn btn-success" disabled>Success</button>
+      <button class="btn btn-info" disabled>Info</button>
+      <button class="btn btn-danger" disabled>Danger</button>
+      <button class="btn btn-warning" disabled>Warning</button>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="mb-5">
+          <h4 class="mb-4">Sizes</h4>
+          <p>
+            Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes
+          </p>
+          <div class="mb-5">
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-light btn-lg">Large button</button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-light btn-sm">Small button</button>
+          </div>
+        </div>
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <h4 class="mb-4">Block Buttons</h4>
+        <p>
+          Create block level buttons—those that span the full width of a parent—by adding <code>.btn-block.</code>
+        </p>
+        <div>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+          <button type="button" class="btn btn-light btn-lg btn-block">Block level button</button>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.card -->
+</div><!-- /.demo-wrapper -->

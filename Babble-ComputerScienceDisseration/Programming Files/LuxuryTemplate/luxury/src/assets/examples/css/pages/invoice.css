@@ -1,0 +1,31 @@
+@import 'https://fonts.googleapis.com/css?family=Great+Vibes';
+.invoice-wrapper.invoice-bg {
+  background: -webkit-linear-gradient(#60c84c 400px, #fff 0, #fff 70%);
+  background: linear-gradient(#60c84c 400px, #fff 0, #fff 70%); }
+
+.invoice-inner {
+  padding: 1.5rem;
+  padding: 3rem; }
+
+.invoice-logo svg {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+.page-invoice .table th, .page-invoice .table td {
+  white-space: nowrap;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
+
+.invoice-btn {
+  height: 45px;
+  border-radius: 0; }
+  @media (max-width: 575px) {
+    .invoice-btn:first-child {
+      margin-bottom: 1.5rem; } }
+
+.signature {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Great Vibes', cursive; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImludm9pY2UuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhEQUE4RDtBQUM5RDtFQUNFLHFFQUE2RDtFQUE3RCw2REFBNkQsRUFBRTs7QUFFakU7RUFDRSxnQkFBZ0I7RUFDaEIsY0FBYyxFQUFFOztBQUVsQjtFQUNFLG1DQUEyQjtVQUEzQiwyQkFBMkIsRUFBRTs7QUFFL0I7RUFDRSxvQkFBb0I7RUFDcEIsc0JBQXNCO0VBQ3RCLHFCQUFxQixFQUFFOztBQUV6QjtFQUNFLGFBQWE7RUFDYixpQkFBaUIsRUFBRTtFQUNuQjtJQUNFO01BQ0Usc0JBQXNCLEVBQUUsRUFBRTs7QUFFaEM7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLG9DQUFvQyxFQUFFIiwiZmlsZSI6InBhZ2VzL2ludm9pY2UuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PUdyZWF0K1ZpYmVzJztcbi5pbnZvaWNlLXdyYXBwZXIuaW52b2ljZS1iZyB7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgjNjBjODRjIDQwMHB4LCAjZmZmIDAsICNmZmYgNzAlKTsgfVxuXG4uaW52b2ljZS1pbm5lciB7XG4gIHBhZGRpbmc6IDEuNXJlbTtcbiAgcGFkZGluZzogM3JlbTsgfVxuXG4uaW52b2ljZS1sb2dvIHN2ZyB7XG4gIHRyYW5zZm9ybTogcm90YXRlWSgxODBkZWcpOyB9XG5cbi5wYWdlLWludm9pY2UgLnRhYmxlIHRoLCAucGFnZS1pbnZvaWNlIC50YWJsZSB0ZCB7XG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gIHBhZGRpbmctcmlnaHQ6IDEuNXJlbTtcbiAgcGFkZGluZy1sZWZ0OiAxLjVyZW07IH1cblxuLmludm9pY2UtYnRuIHtcbiAgaGVpZ2h0OiA0NXB4O1xuICBib3JkZXItcmFkaXVzOiAwOyB9XG4gIEBtZWRpYSAobWF4LXdpZHRoOiA1NzVweCkge1xuICAgIC5pbnZvaWNlLWJ0bjpmaXJzdC1jaGlsZCB7XG4gICAgICBtYXJnaW4tYm90dG9tOiAxLjVyZW07IH0gfVxuXG4uc2lnbmF0dXJlIHtcbiAgZm9udC1zaXplOiAyNHB4O1xuICBmb250LXdlaWdodDogMzAwO1xuICBmb250LWZhbWlseTogJ0dyZWF0IFZpYmVzJywgY3Vyc2l2ZTsgfVxuIl19 */

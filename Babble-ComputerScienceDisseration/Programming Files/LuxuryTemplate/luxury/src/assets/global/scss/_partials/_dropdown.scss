@@ -1,0 +1,58 @@
+// hide bootstrap default arrow
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  font-size: $font-size-sm;
+  margin-top: 2px;
+}
+
+.dropdown-menu.float-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-item {
+  font-weight: 300;
+  padding: .5rem $dropdown-item-padding-x;
+}
+
+.dropdown-menu .arrow {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid $dropdown-cap-bg;
+  border-left: 12px solid transparent;
+}
+
+.dropdown-menu .arrow::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -14px;
+  right: 0;
+  bottom: 0;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid #bbb;
+  border-left: 14px solid transparent;
+  z-index: -1;
+}
+
+.dropdown-menu-cap {
+  border-bottom: 1px solid $dropdown-cap-border-color;
+  font-weight: normal;
+  &,
+  &:hover,
+  &:focus {
+    color: $brand-primary !important;
+    background-color: $dropdown-cap-bg;
+  }
+}
+
+.dropdown-menu .scroll-container {
+  max-height: 320px;
+  overflow: auto;
+}

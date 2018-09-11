@@ -1,0 +1,81 @@
+/* [13 menubar theme] */
+.site-menubar {
+  background: $brand-primary;
+}
+
+.site-menu {
+  li.menu-section-heading {
+    color: lighten($brand-primary, 20%);
+  }
+
+  li a {
+    color: lighten($brand-primary, 35%);
+  }
+  
+  .menu-icon {
+    color: lighten($brand-primary, 25%);
+  }
+  
+  li.open,
+  li.active,
+  li:hover {
+    background-color: rgba(darken($brand-primary, 5%), .5);
+  }
+
+  body.menubar-fold & {
+    li.open {
+      border-bottom-color: darken($brand-primary, 4%);
+    }
+
+    > li > .submenu {
+      background: darken($brand-primary, 2%);
+    }
+
+    > li > .submenu > li {
+      border-bottom: 1px solid darken($brand-primary, 4%);
+    }
+  }
+}
+
+body.menubar-light {
+  .site-menubar {
+    background: #fff;
+    border-right: 1px solid darken(#fff, 10%);
+    box-shadow: 2px 0 4px rgba(0,0,0,.08);
+  }
+
+  .site-menu {
+    li.menu-section-heading {
+      color: #555;
+    }
+
+    li a {
+      color: #555;
+    }
+    
+    .menu-icon {
+      color: lighten(#555, 10%);
+    }
+    
+    li.open,
+    li.active,
+    li:hover {
+      background-color: rgba(darken(#fff, 5%), .5);
+    }
+  }
+
+  &.menubar-fold .site-menu {
+    li.open {
+      border-bottom-color: darken(#fff, 4%);
+    }
+    
+    > li.open,
+    > li > .submenu {
+      background: darken(#fff, 2%);
+    }
+
+    > li > .submenu > li {
+      border-bottom: 1px solid darken(#fff, 4%);
+    }
+  }
+}

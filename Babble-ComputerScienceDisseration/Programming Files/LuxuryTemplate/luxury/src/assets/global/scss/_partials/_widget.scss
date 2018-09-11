@@ -1,0 +1,54 @@
+.widget-blog-post {
+  .avatar {
+    position: absolute;
+    margin: 0;
+    top: 100%;
+  }
+
+  .avatar-floating-center {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .avatar-floating-left {
+    left: 0;
+    transform: translate(1.5rem, -50%);
+  }
+  
+  .avatar-floating-right {
+    right: 0;
+    transform: translate(-1.5rem, -50%);
+  }
+
+  .card-body {
+    padding-top: 2.5rem;
+  }
+}
+
+.blockquote {
+  position: relative;
+  background: $bg-faded;
+  border-left: 10px solid #ddd;
+  padding: 1.25rem;
+  padding-top: 2rem;
+  margin-top: .75rem;
+
+  &::before {
+    color: #ddd;
+    content: '\f10d';
+    font-family: 'fontAwesome';
+    font-size: 2.5rem;
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+  }
+  
+  p {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+  
+  footer {
+    margin-top: 1rem;
+  }
+}

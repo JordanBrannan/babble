@@ -1,0 +1,16 @@
+.single-post .post-author-avatar {
+  left: 24px;
+  border-width: 2px; }
+
+.blog-wrapper {
+  width: 96%;
+  margin: 0 auto;
+  max-width: 600px; }
+  @media (min-width: 768px) {
+    .blog-wrapper {
+      width: 90%; } }
+  @media (min-width: 1200px) {
+    .blog-wrapper {
+      width: 60%; } }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2cuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztFQUNYLGtCQUFrQixFQUFFOztBQUV0QjtFQUNFLFdBQVc7RUFDWCxlQUFlO0VBQ2YsaUJBQWlCLEVBQUU7RUFDbkI7SUFDRTtNQUNFLFdBQVcsRUFBRSxFQUFFO0VBQ25CO0lBQ0U7TUFDRSxXQUFXLEVBQUUsRUFBRSIsImZpbGUiOiJwYWdlcy9ibG9nLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zaW5nbGUtcG9zdCAucG9zdC1hdXRob3ItYXZhdGFyIHtcbiAgbGVmdDogMjRweDtcbiAgYm9yZGVyLXdpZHRoOiAycHg7IH1cblxuLmJsb2ctd3JhcHBlciB7XG4gIHdpZHRoOiA5NiU7XG4gIG1hcmdpbjogMCBhdXRvO1xuICBtYXgtd2lkdGg6IDYwMHB4OyB9XG4gIEBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkge1xuICAgIC5ibG9nLXdyYXBwZXIge1xuICAgICAgd2lkdGg6IDkwJTsgfSB9XG4gIEBtZWRpYSAobWluLXdpZHRoOiAxMjAwcHgpIHtcbiAgICAuYmxvZy13cmFwcGVyIHtcbiAgICAgIHdpZHRoOiA2MCU7IH0gfVxuIl19 */

@@ -1,0 +1,43 @@
+/*------------------------------------------------------------------
+[Core Stylesheet]
+
+Project:	Luxury Admin Template
+Version:	1.0.0
+Last change:	18/10/2017
+Assigned to:	Omar Ali
+Primary use:	Admin template
+
+[Table of contents]
+
+0. Core / Core components of the site i.e. UI components
+1. Body
+2. Navbar / .site-navbar
+3. Wrapper / .site-wrapper
+4. Main area / .site-main
+5. Content / .site-content
+6. Sidebar / .site-menubar
+7. Search / .site-search
+8. Widgets / .widget
+9. Panel / .site-panel
+10. Footer / .site-footer
+11. Navigation / .navbar-nav
+12. Navbar theme
+13. Menubar theme
+14. Site header /.site-header
+-------------------------------------------------------------------*/
+
+
+@import '../../assets/global/scss/core';
+
+@import 'sections/body';
+@import 'sections/site-navbar';
+@import 'sections/navbar-nav';
+@import 'sections/site-header';
+@import 'sections/site-menubar';
+@import 'sections/site-main';
+
+
+//= Themes
+@import 'themes/site-navbar';
+@import 'themes/site-header';
+@import 'themes/site-menubar';

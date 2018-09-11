@@ -1,0 +1,88 @@
+.avatar {
+	position: relative;
+	width: $avatar-size-default;
+	height: $avatar-size-default;
+	border-radius: $avatar-border-radius;
+	margin-right: 1rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: $font-size-base;
+	font-weight: 500;
+	color: #fff;
+}
+
+.avatar img,
+.avatar a > img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	border-radius: $avatar-border-radius;
+}
+
+.avatar-circle,
+.avatar-circle img{
+	border-radius: 100% !important;
+}
+
+.avatar-xs {
+	width: $avatar-size-xs;
+	height: $avatar-size-xs;
+	font-size: $font-size-xs;
+}
+
+.avatar-sm {
+	width: $avatar-size-sm;
+	height: $avatar-size-sm;
+}
+
+.avatar-md {
+	width: $avatar-size-md;
+	height: $avatar-size-md;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.avatar-lg {
+	width: $avatar-size-lg;
+	height: $avatar-size-lg;
+	font-size: $font-size-lg;
+	font-weight: 700;
+}
+
+.avatar-xl {
+	width: $avatar-size-xl;
+	height: $avatar-size-xl;
+	border-radius: $avatar-border-radius-xl;
+	margin-right: 1.5rem;
+
+	img,
+	a > img {
+		border-radius: $avatar-border-radius-xl;
+	}
+}
+
+.avatar .status {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border: 1px solid #fff;
+	margin: 0;
+	width: 12px;
+	height: 12px;
+}
+
+.status {
+	width: 10px;
+	height: 10px;
+	margin-right: .25rem;
+	display: inline-block;
+	border-radius: 100%;
+}
+
+@include status-variant('online', $brand-success);
+@include status-variant('away', $brand-warning);
+@include status-variant('busy', $brand-danger);
+@include status-variant('offline', grayscale(200));

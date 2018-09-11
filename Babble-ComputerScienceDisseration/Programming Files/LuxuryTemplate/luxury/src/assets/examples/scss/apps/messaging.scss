@@ -1,0 +1,77 @@
+@import 'base';
+
+.app-messaging {
+  .app-main-content {
+    max-height: 300px;
+  }
+  
+  @include media-breakpoint-up(md) {
+    .app-main-content .scroll-container {
+      max-height: 300px;
+    }
+    .app-panel-inner .scroll-container {
+      max-height: 400px;
+    }
+  }
+}
+
+.contacts-list {
+  .media {
+    &.active,
+    &:hover {
+      border-color: $brand-success;
+    }
+  }
+
+  .connection-methods {
+    .btn {
+      border-color: $border-color-default;
+      &:hover,
+      &.active {
+        border-color: $brand-success;
+        background: $brand-success;
+      }
+    }
+  }
+}
+
+.messages-list {
+  .msg {
+    padding: 1rem;
+    border: 1px solid $border-color-default;
+    border-radius: $border-radius;
+    margin-bottom: 1.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .msg-in {
+    background: #fff;
+  }
+  .msg-out {
+    background: grayscale(200);
+  }
+}
+
+#app-messaging-form {
+  border-top: 1px solid $border-color-default;
+  background: #fff;
+  padding: 1.5rem;
+  display: flex;
+
+  .msg-form-field,
+  .msg-form-submit {
+    @include reset-input;
+    height: 51px;
+  }
+
+  .msg-form-field {
+    line-height: 50px;
+    font-size: 1.25rem;
+    flex: 1 1 0%;
+  }
+
+  .msg-form-submit {
+    flex: 0 0 150px;
+  }
+}

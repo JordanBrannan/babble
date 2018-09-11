@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g  transform="translate(0, 0)">
+<line data-cap="butt" fill="none" stroke="#2c3f68" stroke-width="2" stroke-miterlimit="10" x1="16" y1="12" x2="16" y2="22" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#2c3f68" stroke-width="2" stroke-miterlimit="10" x1="16" y1="2" x2="16" y2="8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#2c3f68" stroke-width="2" stroke-miterlimit="10" x1="18" y1="10.1" x2="23" y2="13" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline data-cap="butt" fill="none" stroke="#2c3f68" stroke-width="2" stroke-miterlimit="10" points="1,15 6,11 10,14 14.1,10.6 
+" stroke-linejoin="miter" stroke-linecap="butt"/>
+<rect data-color="color-2" x="1" y="2" fill="none" stroke="#46b72e" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="20" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#2c3f68" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="16" cy="10" r="2" stroke-linejoin="miter"/>
+</g></svg>

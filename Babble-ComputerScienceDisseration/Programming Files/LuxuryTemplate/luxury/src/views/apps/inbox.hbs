@@ -1,0 +1,139 @@
+---
+title: Inbox App
+body_classes: app-inbox
+page:
+  styles:
+    - ../assets/examples/css/apps/inbox.css
+---
+
+<div class="app-wrapper">
+  <div class="app-panel" id="app-panel">
+    <div class="app-search">
+      <input type="search" class="search-field" placeholder="Search">
+      <i class="search-icon fa fa-search"></i>
+    </div><!-- /.app-search -->
+
+    <div class="app-panel-inner py-2">
+      <div class="scroll-container px-2">
+        <div class="inbox-cat-list">
+          <a href="javascript:void(0)" class="panel-item">
+            <h5 class="mail-cat-name">INBOX <small>25</small></h5>
+          </a><!-- /.panel-item -->
+          
+          <a href="javascript:void(0)" class="panel-item">
+            <h5 class="mail-cat-name">SENT <small>15</small></h5>
+          </a><!-- /.panel-item -->
+
+          <a href="javascript:void(0)" class="panel-item active">
+            <h5 class="mail-cat-name">DRAFT <small>7</small></h5>
+          </a><!-- /.panel-item -->
+
+          <a href="javascript:void(0)" class="panel-item">
+            <h5 class="mail-cat-name">SPAM <small>91</small></h5>
+          </a><!-- /.panel-item -->
+
+          <a href="javascript:void(0)" class="panel-item">
+            <h5 class="mail-cat-name">TRASH <small>105</small></h5>
+          </a><!-- /.panel-item -->
+        </div><!-- /.inbox-cat-list -->
+      </div><!-- /.scroll-container -->
+    </div><!-- /.app-panel-inner -->
+
+    <!-- panel-toggle button -->
+    <a href="#" class="app-panel-toggle" data-toggle="class" data-target="#app-panel" data-class="show">
+      <i class="fa fa-chevron-right"></i>
+      <i class="fa fa-chevron-left"></i>
+    </a>
+  </div><!-- /.app-panel -->
+
+  <div class="app-main">
+    <header class="app-main-header">
+      <h5 class="app-main-heading text-center">DRAFTS</h5>
+    </header><!-- /.app-main-header -->
+
+    <div class="app-main-content p-3">
+      <div class="mail-list">
+        <div class="mail-item">
+          <div class="checkbox mr-3">
+            <input id="mail-item-3" type="checkbox">
+            <label for="mail-item-3"></label>
+          </div>
+          <span class="mail-item-star checked"><i class="fa fa-star"></i></span>
+          <h6 class="mail-item-title m-0"><a href="#">Lorem ipsum dolor sit amet.</a></h6>
+        </div><!-- /.mail-item -->
+        
+        <div class="mail-item">
+          <div class="checkbox mr-3">
+            <input id="mail-item-4" type="checkbox">
+            <label for="mail-item-4"></label>
+          </div>
+          <span class="mail-item-star"><i class="fa fa-star"></i></span>
+          <h6 class="mail-item-title m-0"><a href="#">Lorem ipsum dolor sit.</a></h6>
+        </div><!-- /.mail-item -->
+        
+        <div class="mail-item">
+          <div class="checkbox mr-3">
+            <input id="mail-item-5" type="checkbox">
+            <label for="mail-item-5"></label>
+          </div>
+          <span class="mail-item-star checked"><i class="fa fa-star"></i></span>
+          <h6 class="mail-item-title m-0"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h6>
+        </div><!-- /.mail-item -->
+        
+        <div class="mail-item">
+          <div class="checkbox mr-3">
+            <input id="mail-item-4" type="checkbox">
+            <label for="mail-item-4"></label>
+          </div>
+          <span class="mail-item-star"><i class="fa fa-star"></i></span>
+          <h6 class="mail-item-title m-0"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta.</a></h6>
+        </div><!-- /.mail-item -->
+        
+        <div class="mail-item">
+          <div class="checkbox mr-3">
+            <input id="mail-item-5" type="checkbox">
+            <label for="mail-item-5"></label>
+          </div>
+          <span class="mail-item-star"><i class="fa fa-star"></i></span>
+          <h6 class="mail-item-title m-0"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+        </div><!-- /.mail-item -->
+
+        <div class="mail-item">
+          <div class="checkbox mr-3">
+            <input id="mail-item-6" type="checkbox">
+            <label for="mail-item-6"></label>
+          </div>
+          <span class="mail-item-star checked"><i class="fa fa-star"></i></span>
+          <h6 class="mail-item-title m-0"><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></h6>
+        </div><!-- /.mail-item -->
+
+        <div class="mail-item">
+          <div class="checkbox mr-3">
+            <input id="mail-item-7" type="checkbox">
+            <label for="mail-item-7"></label>
+          </div>
+          <span class="mail-item-star"><i class="fa fa-star"></i></span>
+          <h6 class="mail-item-title m-0"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate.</a></h6>
+        </div><!-- /.mail-item -->
+
+        <div class="mail-item">
+          <div class="checkbox mr-3">
+            <input id="mail-item-8" type="checkbox">
+            <label for="mail-item-8"></label>
+          </div>
+          <span class="mail-item-star"><i class="fa fa-star"></i></span>
+          <h6 class="mail-item-title m-0"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+        </div><!-- /.mail-item -->
+
+        <div class="mail-item">
+          <div class="checkbox mr-3">
+            <input id="mail-item-9" type="checkbox">
+            <label for="mail-item-9"></label>
+          </div>
+          <span class="mail-item-star"><i class="fa fa-star"></i></span>
+          <h6 class="mail-item-title m-0"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+        </div><!-- /.mail-item -->
+      </div><!-- /.mail-list -->
+    </div><!-- /.app-main-content -->
+  </div><!-- /.app-main -->
+</div><!-- /.app-wrapper -->

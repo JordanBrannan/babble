@@ -1,0 +1,333 @@
+---
+title: Custom Form Elements
+body_classes: demo-examples demo-form-custom site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h2 class="demo-heading">Custom Form Elements</h2>
+  </header><!-- /.demo-header -->
+  
+  <div class="docs-brief-intro font-italic mb-4">
+    Form customized checkbox, radio elements.
+  </div>
+  
+  <div class="card">
+    <h4 class="mb-4" id="checkboxes">Checkboxes</h4>
+    <div class="row">
+      <div class="col-md">
+        <h6 class="mb-4">Basic Usage</h6>
+        <p class="mb-4">
+          Wrap <code>&lt;input type="checkbox"&gt;</code> within a <code>&lt;div class="checkbox"&gt;</code> For default usage
+        </p>
+        <div class="checkbox">
+          <input type="checkbox" id="cb-01">
+          <label for="cb-01">Default unchecked</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="cb-02" checked>
+          <label for="cb-02">Default checked</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="cb-03" disabled>
+          <label for="cb-03">Disabled</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="cb-04" checked disabled>
+          <label for="cb-04">Checked disabled</label>
+        </div>
+        <div class="checkbox checkbox-warning">
+          <input type="checkbox" id="cb-04" checked disabled>
+          <label for="cb-04">Colored disabled</label>
+        </div>
+
+        <h6 class="my-4">Without label text</h6>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label></label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" checked>
+          <label></label>
+        </div>
+      </div><!-- /.col -->
+
+      <div class="col-md">
+        <h6 class="mb-4">Color Options</h6>
+        <p class="mb-4">
+          Add color class e.g. <code>checkbox-primary</code>
+        </p>
+        <div class="checkbox checkbox-primary">
+          <input type="checkbox" id="cb-1" checked>
+          <label for="cb-1">primary</label>
+        </div>
+        <div class="checkbox checkbox-info">
+          <input type="checkbox" id="cb-2" checked>
+          <label for="cb-2">info</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" id="cb-3" checked>
+          <label for="cb-3">success</label>
+        </div>
+        <div class="checkbox checkbox-warning">
+          <input type="checkbox" id="cb-4" checked>
+          <label for="cb-4">warning</label>
+        </div>
+        <div class="checkbox checkbox-danger">
+          <input type="checkbox" id="cb-5" checked>
+          <label for="cb-5">danger</label>
+        </div>
+
+        <h6 class="my-4">Size Options</h6>
+        <p class="mb-4">
+          Add<code>checkbox-lg</code> for larger checkbox
+        </p>
+        <div class="checkbox checkbox-primary checkbox-lg">
+          <input type="checkbox" id="cb-11" checked>
+          <label for="cb-11">Large Checkbox</label>
+        </div>
+      </div><!-- /.col -->
+
+      <div class="col-md">
+        <h6 class="mb-4">Inline Checkbox</h6>
+        <p class="mb-4">
+          Add class <code>checkbox-inline</code>
+        </p>
+        <div>
+          <div class="checkbox checkbox-inline">
+            <input type="checkbox" id="cb-10">
+            <label for="cb-10">inline unchecked</label>
+          </div>
+          <div class="checkbox checkbox-success checkbox-inline ml-3">
+            <input type="checkbox" id="cb-011" checked>
+            <label for="cb-011">inline checked</label>
+          </div>
+        </div>
+
+        <h6 class="my-4">Different Shapes</h6>
+        <p class="mb-4">
+          Add <code>checkbox-circle</code> for circular checkboxes
+          and <code>checkbox-square</code> for squared corners
+        </p>
+        <div>
+          <div class="checkbox checkbox-circle checkbox-primary">
+            <input type="checkbox" id="cb-circle-2" checked>
+            <label for="cb-circle-2">circular Checkbox</label>
+          </div>
+          <div class="checkbox checkbox-success checkbox-square">
+            <input type="checkbox" id="cb-sq-1" checked>
+            <label for="cb-sq-1">Squared Corners</label>
+          </div>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- .row -->
+
+    <div class="mt-4 font-italic text-muted">
+      Awesome bootstrap checkbox
+      <a class="text-danger" href="http://flatlogic.github.io/awesome-bootstrap-checkbox/demo/">Documentation</a>
+    </div>
+  </div><!-- .card -->
+  
+  <div class="card">
+    <h4 class="mb-4" id="radios">Radio Buttons</h4>
+    <div class="row">
+      <div class="col-md">
+        <h6 class="mb-4">Basic usage</h6>
+        <p class="mb-4">
+          Wrap <code>&lt;input type="radio"&gt;</code> within a <code>&lt;div class="radio"&gt;</code> For default usage.
+        </p>
+        <div class="radio">
+          <input type="radio" id="radio-1">
+          <label for="radio-1">unchecked radio</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="radio-2" checked>
+          <label for="radio-2">checked radio</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="radio-disabled" disabled>
+          <label for="radio-disabled">disabled unchecked</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="radio-disabled-2" disabled checked>
+          <label for="radio-disabled-2">disabled checked</label>
+        </div>
+      </div><!-- .col -->
+      <div class="col-md">
+        <h6 class="mb-4">Color options</h6>
+        <p class="mb-4">
+          Add color class e.g. <code>radio-primary</code>
+        </p>
+        <div class="row">
+          <div class="col-sm">
+            <div class="radio radio-primary">
+              <input type="radio" id="radio-primary" name="radio-primary" checked>
+              <label for="radio-primary">primary</label>
+            </div>
+            <div class="radio radio-info">
+              <input type="radio" id="radio-info" name="radio-info" checked>
+              <label for="radio-info">info</label>
+            </div>
+            <div class="radio radio-success">
+              <input type="radio" id="radio-success" name="radio-success" checked>
+              <label for="radio-success">success</label>
+            </div>
+            <div class="radio radio-warning">
+              <input type="radio" id="radio-warning" name="radio-warning" checked>
+              <label for="radio-warning">warning</label>
+            </div>
+            <div class="radio radio-danger">
+              <input type="radio" id="radio-danger" name="radio-danger" checked>
+              <label for="radio-danger">danger</label>
+            </div>
+          </div><!-- .col -->
+
+          <div class="col-sm">
+            <div class="radio radio-primary">
+              <input type="radio" id="radio-primary-2" name="radio-primary">
+              <label for="radio-primary-2">primary</label>
+            </div>
+            <div class="radio radio-info">
+              <input type="radio" id="radio-info-2" name="radio-info">
+              <label for="radio-info-2">info</label>
+            </div>
+            <div class="radio radio-success">
+              <input type="radio" id="radio-success-2" name="radio-success">
+              <label for="radio-success-2">success</label>
+            </div>
+            <div class="radio radio-warning">
+              <input type="radio" id="radio-warning-2" name="radio-warning">
+              <label for="radio-warning-2">warning</label>
+            </div>
+            <div class="radio radio-danger">
+              <input type="radio" id="radio-danger-2" name="radio-danger">
+              <label for="radio-danger-2">danger</label>
+            </div>
+          </div><!-- .col -->
+        </div><!-- .row -->
+      </div><!-- .col -->
+
+      <div class="col-md">
+        <h6 class="mb-4">Inline radios</h6>
+        <p class="mb-4">
+          Add class <code>radio-inline</code> for inline radios
+        </p>
+        <div class="radio radio-inline radio-primary">
+          <input type="radio" id="radio-inline-1" name="ilr" checked>
+          <label for="radio-inline-1">inline radio</label>
+        </div>
+        <div class="ml-3 radio radio-inline radio-success">
+          <input type="radio" id="radio-inline-2" name="ilr">
+          <label for="radio-inline-2">inline radio</label>
+        </div>
+
+        <h6 class="my-4">Without label text</h6>
+        <div class="radio">
+          <input type="radio" name="wlt">
+          <label></label>
+        </div>
+        <div class="radio radio-success">
+          <input type="radio" name="wlt" checked>
+          <label></label>
+        </div>
+      </div><!-- .col -->
+    </div><!-- .row -->
+
+    <div class="mt-4 font-italic text-muted">
+      Awesome bootstrap checkbox
+      <a class="text-danger" href="http://flatlogic.github.io/awesome-bootstrap-checkbox/demo/">Documentation</a>
+    </div>
+  </div><!-- .card -->
+
+  <div class="card">
+    <h4 class="mb-4" id="switches">Switches</h4>
+    <div class="row">
+      <div class="col-md">
+        <h6 class="mb-4">Basic Usage</h6>
+        <p class="mb-4">
+          Add <code>data-plugin="switchery"</code> to a <code>checkbox</code> for deafault switch
+        </p>
+        <div class="d-flex flex-column">
+          <div class="mb-4">
+            <label><input type="checkbox" data-plugin="switchery" checked /> On</label>
+          </div>
+          <div class="mb-4">
+            <label><input type="checkbox" data-plugin="switchery" /> Off</label>
+          </div>
+          <div class="mb-4">
+            <label for="switch-0-3"><input id="switch-0-3" type="checkbox" data-plugin="switchery" disabled checked /> Disabled On</label>
+          </div>
+          <div class="mb-4">
+            <label for="switch-0-4"><input id="switch-0-4" type="checkbox" data-plugin="switchery" disabled /> Disabled Off</label>
+          </div>
+        </div>
+      </div><!-- /.col -->
+
+      <div class="col-md">
+        <h6 class="mb-4">Color Options</h6>
+        <p class="mb-4">
+          Add <code>data-color="#xxx"</code> to change color<br>
+          and <code>data-jack-color="#xxx"</code> to change jack color
+        </p>
+        <div class="d-flex flex-wrap">
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-color="#188ae2" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-color="#10c469" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-color="#35b8e0" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-color="#f9c851" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-color="#ff5b5b" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-color="#5b69bc" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-color="#ff8acc" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-color="#3b3e47" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-color="#f9c851" data-jack-color="#3b3e47" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-color="#eee" data-jack-color="#10c469" checked />
+          </div>
+        </div>
+      </div><!-- /.col -->
+
+      <div class="col-md">
+        <h6 class="mb-4">Size Options</h6>
+        <p class="mb-4">
+          Add <code>data-size="small"</code> or <code>data-size="small"</code> to change size
+        </p>
+        <div class="d-flex flex-wrap">
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-size="large" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" checked />
+          </div>
+          <div class="mb-4 mr-4">
+            <input type="checkbox" data-plugin="switchery" data-size="small" checked />
+          </div>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- .row -->
+
+    <div class="mt-4 font-italic text-muted">
+      Switchery
+      <a class="text-danger" href="http://abpetkov.github.io/switchery/">documentation</a>
+    </div>
+  </div><!-- .card -->
+</div>

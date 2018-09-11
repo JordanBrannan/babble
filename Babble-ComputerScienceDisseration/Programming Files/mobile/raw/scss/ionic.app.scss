@@ -1,0 +1,65 @@
+$positive: #0074FF;
+$dark: #202225;
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.grad {
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4ca2cd),     color-stop(100%, #2657eb));
+}
+
+.no-padding {
+	padding: 0px !important;
+}
+
+.button2 {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	border-top: none;
+	vertical-align: center;
+}
+
+.speech-bubble {
+	border: 1px solid #FFFFFF;
+	border-radius: 25px;
+	width: 50%;
+	vertical-align: middle;
+	padding: 15px;
+	margin: 10px;
+	text-align: left;
+}
+
+.top-container {
+	height: calc(100% - 48px);
+	overflow: scroll;
+	padding: 10px;
+	padding-bottom: 0!important;
+}
+
+.top-container2 {
+	display: block;
+	width: 100%;
+	height: calc(100%-60px);
+	margin: 0px !important;
+}
+
+.bottom-container {
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	width: 100%;
+}
+
+.bottom-form {
+	position: absolute;
+	bottom: 0px !important;
+	display: block;
+	width: 100%;
+	background-color: white;
+	button {
+		margin: 0px !important;
+	}
+	
+}
+body {
+	color: #FFFFFF;
+}
+

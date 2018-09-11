@@ -1,0 +1,260 @@
+---
+title: Form Validation | Demo
+body_classes: demo-examples demo-form-validation site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+    - ../assets/examples/css/demos/form.validation.css
+  scripts:
+    - ../assets/examples/js/demos/form.validation.js
+  js_plugins:
+    - ../assets/vendor/bower_components/jquery-validation/dist/jquery.validate.min.js
+    - ../assets/vendor/bower_components/parsleyjs/dist/parsley.min.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h2 class="demo-heading">Form Validation</h2>
+  </header><!-- /.demo-header -->
+  
+  <h4 class="my-4">- Parsley Plugin</h4>
+  <div class="docs-brief-intro font-italic mb-4">
+    <strong>Parsley,</strong> the ultimate JavaScript form validation library...
+    Validating forms frontend have never been so powerful and easy!
+    <br>For more examples and documentation please <a class="text-danger" href="http://parsleyjs.org/">Click Here</a>
+  </div>
+  
+  <div class="row">
+    <div class="col-lg">
+      <div class="card">
+        <h5 class="mb-5">Simple Form Example</h5>
+        <div class="alert mb-4 alert-warning d-none">
+          <h6>Oh snap!</h6>
+          <div>This form seems to be invalid :(</div>
+        </div>
+
+        <div class="alert mb-4 alert-info d-none">
+          <h6>Yay!</h6>
+          <div>Everything seems to be ok :)</div>
+        </div>
+        <form id="parsleyjs-example-1" data-parsley-validate action="">
+          <div class="form-group row">
+            <label for="pjs-ex1-fullname" class="col-4 col-form-label">Full Name *:</label>
+            <div class="col-8">
+              <input type="text" id="pjs-ex1-fullname" class="form-control" required>
+            </div>
+          </div><!-- /.form-group row -->
+          <div class="form-group row">
+            <label for="pjs-ex1-email" class="col-4 col-form-label">Email *:</label>
+            <div class="col-8">
+              <input type="email" id="pjs-ex1-email" class="form-control" data-parsley-trigger="change" required>
+            </div>
+          </div><!-- /.form-group row -->
+          <div class="form-group row">
+            <label class="col-4 col-form-label">Gender *:</label>
+            <div class="col-8">
+              <div class="radio radio-inline radio-primary mr-3">
+                <input type="radio" name="pjs-ex1-gender" id="pjs-ex1-gender-m" required>
+                <label for="pjs-ex1-gender-m">Male</label>
+              </div>
+              <div class="radio radio-inline radio-primary">
+                <input type="radio" name="pjs-ex1-gender" id="pjs-ex1-gender-f">
+                <label for="pjs-ex1-gender-f">Female</label>
+              </div>
+            </div>
+          </div><!-- /.form-group row -->
+          <div class="form-group row">
+            <label for="pjs-ex1-heard" class="col-4 col-form-label">knew us from *:</label>
+            <div class="col-8">
+              <select id="pjs-ex1-heard" class="form-control" required>
+                <option disabled selected>Choose..</option>
+                <option value="press">Press</option>
+                <option value="net">Internet</option>
+                <option value="mouth">Word of mouth</option>
+                <option value="other">Other..</option>
+              </select>
+            </div>
+          </div><!-- /.form-group row -->
+          <div class="form-group row">
+            <label for="pjs-ex1-msg" class="col-4 col-form-label">Message(20-100):</label>
+            <div class="col-8">
+              <textarea name="message" id="pjs-ex1-msg" class="form-control" rows="3" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.." data-parsley-validation-threshold="10"></textarea>
+            </div>
+          </div><!-- /.form-group row -->
+          <button class="btn btn-outline-primary btn-block">Validate</button>
+        </form>
+      </div><!-- /.card -->
+    </div><!-- /.col -->
+
+    <div class="col-lg">
+      <div class="card">
+        <h5 class="mb-5">Multi Steps Form Demo</h5>
+        <div class="alert alert-info mb-4">
+          <i class="fa fa-info-circle mr-3"></i>Fields with (*) are required
+        </div>
+        <form id="parsleyjs-example-2" data-parsley-validate action="">
+          <section class="form-section current">
+            <div class="form-group">
+              <label for="firstname" class="form-control-label">First Name *:</label>
+              <input type="text" class="form-control" name="firstname" required="">
+            </div><!-- /.form-group -->
+            <div class="form-group">
+              <label for="lastname" class="form-control-label">Last Name *:</label>
+              <input type="text" class="form-control" name="lastname" required>
+            </div><!-- /.form-group -->
+          </section>
+
+          <section class="form-section">
+            <div class="form-group">
+              <label for="email" class="form-control-label">Email *:</label>
+              <input type="email" class="form-control" name="email" required>
+            </div><!-- /.form-group -->
+          </section>
+
+          <section class="form-section">
+            <div class="form-group">
+              <label for="email" class="form-control-label">Favorite color *:</label>
+              <input type="text" class="form-control" name="color" required>
+            </div><!-- /.form-group -->
+          </section>
+
+          <div class="form-navigation d-flex">
+            <button type="button" class="previous btn btn-outline-primary">Back</button>
+            <button type="button" class="next btn btn-outline-primary ml-auto">Next</button>
+            <input type="submit" class="btn btn-outline-success ml-auto">
+          </div>
+        </form>
+      </div><!-- /.card -->
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+  
+  <h4 class="my-4">- Query Validation Plugin</h4>
+  <div class="docs-brief-intro font-italic mb-4">
+    <strong>Query Validation Plugin</strong> This jQuery plugin makes simple clientside form validation easy, whilst still offering plenty of customization options.
+    For more examples and documentation please <a class="text-danger" href="https://jqueryvalidation.org/">Click Here</a>
+  </div>
+  
+  <div class="card">
+    <h5 class="mb-5">Simple Form</h5>
+    <form id="jq-validation-example-1" method="post" class="form-horizontal" action="">
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="firstname">First name</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First name" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="lastname">Last name</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last name" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="username">Username</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="text" class="form-control" id="username" name="username" placeholder="Username" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="email">Email</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="password">Password</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="confirm_password">Confirm password</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-md-5 col-sm-8 offset-sm-4">
+          <div class="checkbox checkbox-primary">
+              <input type="checkbox" id="agree" name="agree" value="agree" />
+              <label for="agree" class="form-control-label">Please agree to our policy</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-md-5 col-sm-8 offset-sm-4">
+          <button type="submit" class="btn btn-outline-primary" name="signup" value="Sign up">Sign up</button>
+        </div>
+      </div>
+    </form>
+  </div><!-- /.card -->
+
+  <div class="card">
+    <h5 class="mb-5">Using Feedback Icons</h5>
+    <form id="jq-validation-example-2" method="post" class="form-horizontal" action="">
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="firstname1">First name</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="text" class="form-control" id="firstname1" name="firstname1" placeholder="First name" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="lastname1">Last name</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="text" class="form-control" id="lastname1" name="lastname1" placeholder="Last name" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="username1">Username</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="text" class="form-control" id="username1" name="username1" placeholder="Username" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="email1">Email</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="text" class="form-control" id="email1" name="email1" placeholder="Email" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="password1">Password</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="password" class="form-control" id="password1" name="password1" placeholder="Password" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-sm-right" for="confirm_password1">Confirm password</label>
+        <div class="col-md-5 col-sm-8">
+          <input type="password" class="form-control" id="confirm_password1" name="confirm_password1" placeholder="Confirm password" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-md-5 col-sm-8 offset-sm-4">
+          <div class="checkbox checkbox-primary">
+            <input type="checkbox" id="agree1" name="agree1" value="agree" />
+            <label for="agree1" class="form-control-label">Please agree to our policy</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-md-5 col-sm-8 offset-sm-4">
+          <button type="submit" class="btn btn-outline-primary" name="signup1" value="Sign up">Sign up</button>
+        </div>
+      </div>
+    </form>
+  </div><!-- /.card -->
+</div><!-- /.demo-warpper -->

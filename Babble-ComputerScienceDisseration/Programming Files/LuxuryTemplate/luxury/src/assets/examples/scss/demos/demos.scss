@@ -1,0 +1,90 @@
+@import '../base';
+
+body.demo-examples {
+  background: lighten($bg-faded, 1%);
+  
+  .demo-wrapper {
+    font-size: 1rem;
+  }
+  .demo-header {
+    position: relative;
+    display: flex;
+  }
+
+  .demo-heading {
+    font-size: 1.75rem;
+    margin: 0;
+    margin-right: auto;
+    transition: font-size .25s;
+  }
+  
+  .docs-brief-intro {
+    padding: 1rem 1.5rem;
+    border-left: 5px solid $brand-primary;
+  }
+
+  .card {
+    border: none;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+  }
+}
+
+.bd-example {
+  padding: 0;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+#contents-wrapper {
+  position: relative;
+  .stuck & {
+    position: fixed;
+    top: $navbar-height;
+    right: 0;
+    z-index: 999;
+    #contents-heading {
+      background: #fff;
+      box-shadow: -2px 2px 6px rgba(0,0,0,.08);
+    }
+  }
+
+  #contents-heading {
+    cursor: pointer;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  #contents-index {
+    position: absolute;
+    z-index: 999;
+    top: 3.5rem;
+    min-width: 260px;
+    right: 0;
+    max-height: 380px;
+    overflow: auto;
+    display: none;
+    background: #fff;
+    box-shadow: -2px 2px 8px rgba(0,0,0,.08);
+    .stuck & {
+      top: 100%;
+    }
+  }
+
+  #contents-list {
+    padding: 1rem;
+    margin: 0;
+    margin-left: 1.5rem;
+    li {
+      margin-left: 0;
+      transition: margin-left .3s;
+    }
+    li:hover {
+      margin-left: .5rem;
+    }
+  }
+
+  // &:hover #contents-index {
+  //   display: block;
+  // }
+}

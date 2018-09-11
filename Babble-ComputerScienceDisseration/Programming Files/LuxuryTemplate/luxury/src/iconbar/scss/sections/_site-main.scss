@@ -1,0 +1,33 @@
+/* [3. wrapper] */
+.site-wrapper {
+  display: flex;
+}
+
+/* [4. main] */
+.site-main {
+  flex: 0 1 5000px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s;
+  @include media-breakpoint-down(sm) {
+    body.menubar-open & {
+      transform: translate3d(#{$menubar-width}, 0, 0);
+    }
+  }
+}
+
+/* [5. content area] */
+.site-content {
+  padding: $grid-gutter-width;
+  flex: 1 1 100%;
+}
+
+/* [10. footer] */
+.site-footer {
+  border-top: 1px solid #edecec;
+  background: #fdfdfd;
+  padding: 1.5rem;
+  display: flex;
+  flex: 0 0 auto;
+}

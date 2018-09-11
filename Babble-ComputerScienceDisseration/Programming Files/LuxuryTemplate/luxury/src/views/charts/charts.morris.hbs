@@ -1,0 +1,86 @@
+---
+title: Charts | Morris
+body_classes: demo-examples demo-charts-morris site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+  scripts:
+    - ../assets/examples/js/demos/demos.js
+    - ../assets/examples/js/demos/charts.morris.js
+  css_plugins:
+    - ../assets/vendor/bower_components/morris.js/morris.css
+  js_plugins:
+    - ../assets/vendor/bower_components/raphael/raphael.min.js
+    - ../assets/vendor/bower_components/morris.js/morris.min.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h1 class="demo-heading">Morris Charts</h1>
+    <div id="contents-wrapper">
+      <h3 id="contents-heading">Contents<i class="ml-2 fa fa-chevron-down"></i></h3>
+      <div id="contents-index">
+        <ul id="contents-list">
+          <li><a href="#morris-line">Line Charts</a></li>
+          <li><a href="#morris-area">Area Charts</a></li>
+          <li><a href="#morris-bar">Bar Charts</a></li>
+          <li><a href="#morris-donut">Donut Charts</a></li>
+        </ul>
+      </div><!-- /#contents-index -->
+    </div><!-- /#contents-wrapper -->
+  </header><!-- /.demo-header -->
+  
+  <div class="docs-brief-intro font-italic mb-4">
+    For the full documentation and other examples of <strong>Morris Charts</strong> please
+    <a class="text-danger" href="http://morrisjs.github.io/morris.js/index.html">Click here!</a>
+  </div>
+
+  <div class="bd-content">
+    <h3 id="morris-line" class="mb-4">Line Charts</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card p-3">
+          <h5 class="mb-4">Line Example</h5>
+          <div id="morris-line-1" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- ./row -->
+    
+    <h3 id="morris-area" class="my-4">Area Charts</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card p-3">
+          <h5 class="mb-4">Area Example</h5>
+          <div id="morris-area-1" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- ./row -->
+    
+    <h3 id="morris-bar" class="my-4">Bar Charts</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Bar Example</h5>
+          <div id="morris-bar-1" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Stacked Bars</h5>
+          <div id="morris-bar-stacked" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- /.row -->
+    
+    <h3 id="morris-donut" class="my-4">Donut Charts</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card p-3">
+          <h5 class="mb-4">Donut Example</h5>
+          <div id="morris-donut-1" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- ./row -->
+  </div><!-- ./bd-content -->
+</div><!-- /.demo-wrapper -->

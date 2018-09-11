@@ -1,0 +1,98 @@
+@import '../base';
+
+.fileupload-wrapper {
+    height: 400px;
+    background: #fff;
+    border: 1px solid $border-color-default;
+    padding: .5rem;
+    border-radius: $border-radius;
+    margin-bottom: 2rem;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.fileupload-drop-area {
+    position: relative;
+    height: 100%;
+    background-color: $bg-faded;
+    border: 3px dashed darken($border-color-default, 2%);
+    border-radius: $border-radius;
+    input {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+    }
+
+    .fileupload-icons {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > svg:nth-child(1) {
+            transform: rotate(-15deg);
+            margin-right: .5rem;
+        }
+        > svg:nth-child(2) {
+            margin-bottom: 1rem;
+        }
+        > svg:nth-child(3) {
+            transform: rotate(15deg);
+            margin-left: .5rem;
+        }
+    }
+    .fileupload-hint {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 50px);
+        color: #ddd;
+        font-size: 1.25rem;
+        font-style: italic;
+    }
+}
+
+.fileupload-buttonbar {
+    .checkbox {
+        margin: 0;
+    }
+    .btn {
+        font-size: .875rem;
+    }
+}
+
+.overall-progress {
+    height: 6px;
+    background-color: $brand-primary;
+    border-radius: 0;
+}
+
+.file-item {
+    background: $bg-faded;
+    margin-bottom: 1.5rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .file-item-inner {
+        padding: .75rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .file-item-progress {
+        height: .25rem;
+        border-radius: 0;
+        background: $brand-primary;
+    }
+
+    .preview {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}

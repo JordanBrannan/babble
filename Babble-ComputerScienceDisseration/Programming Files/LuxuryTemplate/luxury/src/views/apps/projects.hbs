@@ -1,0 +1,221 @@
+---
+title: Projects App
+body_classes: app-projects
+page:
+  styles:
+    - ../assets/examples/css/apps/projects.css
+  scripts:
+    - ../assets/examples/js/apps/projects.js
+  css_plugins:
+    - ../assets/vendor/bower_components/bootstrap-daterangepicker/daterangepicker.css
+  js_plugins:
+    - ../assets/vendor/bower_components/moment/min/moment.min.js
+    - ../assets/vendor/bower_components/bootstrap-daterangepicker/daterangepicker.js
+---
+
+<div class="app-wrapper">
+  <div class="app-panel" id="app-panel">
+    <div class="app-search">
+      <input type="search" class="search-field" placeholder="Search">
+      <i class="search-icon fa fa-search"></i>
+    </div><!-- /.app-search -->
+    
+    <div class="app-panel-inner">
+      <div class="scroll-container">
+        <div class="p-3">
+          <button class="btn btn-success py-3 btn-block btn-lg" data-toggle="modal" data-target="#projects-task-modal">ADD NEW TASK</button>
+        </div>
+        
+        <hr class="m-0">
+
+        <div class="people-list d-flex justify-content-start flex-wrap p-3">
+          <a href="#" class="avatar avatar-sm avatar-circle text-white bg-primary">A</a>
+          <a href="#" class="avatar avatar-sm avatar-circle">
+            <img src="../assets/global/images/101.jpg" alt="">
+          </a>
+          <a href="#" class="avatar avatar-sm avatar-circle text-white bg-warning">B</a>
+          <a href="#" class="avatar avatar-sm avatar-circle">
+            <img src="../assets/global/images/103.jpg" alt="">
+          </a>
+          <!-- add new people -->
+          <button class="avatar-sm avatar-circle fz-base font-weight-bold add-people-btn" data-toggle="tooltip" data-placement="right" title="Add People">
+            <i class="zmdi zmdi-plus"></i>
+          </button>
+        </div>
+        
+        <hr class="m-0">
+
+        <div class="projects-list">
+          <div class="media">
+            <div class="avatar avatar-circle avatar-md project-icon" data-plugin="firstLitter" data-target="#project-1"></div>
+            <div class="media-body">
+              <h6 class="project-name" id="project-1">Android App Project</h6>
+              <small class="project-detail">Task: programming modules</small>
+            </div>
+          </div><!-- /.media -->
+
+          <div class="media selected">
+            <div class="avatar avatar-circle avatar-md project-icon" data-plugin="firstLitter" data-target="#project-2"></div>
+            <div class="media-body">
+              <h6 class="project-name" id="project-2">Luxury Project</h6>
+              <small class="project-detail">Task: UI design</small>
+            </div>
+          </div><!-- /.media -->
+          
+          <div class="media">
+            <div class="avatar avatar-circle avatar-md project-icon" data-plugin="firstLitter" data-target="#project-3"></div>
+            <div class="media-body">
+              <h6 class="project-name" id="project-3">Windows Phone App</h6>
+              <small class="project-detail">Task: deployment</small>
+            </div>
+          </div><!-- /.media -->
+
+          <div class="media">
+            <div class="avatar avatar-circle avatar-md project-icon" data-plugin="firstLitter" data-target="#project-4"></div>
+            <div class="media-body">
+              <h6 class="project-name" id="project-4">IOS Mobile App</h6>
+              <small class="project-detail">finished project</small>
+            </div>
+          </div><!-- /.media -->
+
+          <div class="media">
+            <div class="avatar avatar-circle avatar-md project-icon" data-plugin="firstLitter" data-target="#project-5"></div>
+            <div class="media-body">
+              <h6 class="project-name" id="project-5">Digital Recording Project</h6>
+              <small class="project-detail">in analysis phase</small>
+            </div>
+          </div><!-- /.media -->
+
+          <div class="mt-4">
+            <button class="btn btn-success py-3 btn-block btn-lg">ADD NEW PROJECT</button>
+          </div>
+        </div><!-- /.projects-list -->
+      </div><!-- /.scroll-container -->
+    </div><!-- /.app-panel-inner  -->
+
+    <!-- panel-toggle button -->
+    <a href="#" class="app-panel-toggle" data-toggle="class" data-target="#app-panel" data-class="show">
+      <i class="fa fa-chevron-right"></i>
+      <i class="fa fa-chevron-left"></i>
+    </a>
+  </div><!-- /.app-panel -->
+
+  <div class="app-main">
+    <div class="app-main-header">
+      <h5 class="app-main-heading text-center">"Luxury Project" tasks</h5>
+    </div><!-- /.app-main-header -->
+
+    <div class="app-main-content">
+      <div class="project-tasks">
+        <div class="project-task">
+          <div class="checkbox checkbox-circle checkbox-lg">
+            <input id="pj-task-1" type="checkbox">
+            <label for="pj-task-1">Project initiation and proposal preparing</label>
+          </div>
+        </div><!-- /.project-task -->
+
+        <div class="project-task">
+          <div class="checkbox checkbox-circle checkbox-lg">
+            <input id="pj-task-2" type="checkbox">
+            <label for="pj-task-2">Analyzing user requirements</label>
+          </div>
+        </div><!-- /.project-task -->
+
+        <div class="project-task">
+          <div class="checkbox checkbox-circle checkbox-lg">
+            <input id="pj-task-3" type="checkbox">
+            <label for="pj-task-3">Project planing and defining development phases</label>
+          </div>
+        </div><!-- /.project-task -->
+
+        <div class="project-task">
+          <div class="checkbox checkbox-circle checkbox-lg">
+            <input id="pj-task-4" type="checkbox">
+            <label for="pj-task-4">Timing and defining milestones</label>
+          </div>
+        </div><!-- /.project-task -->
+
+        <div class="project-task">
+          <div class="checkbox checkbox-circle checkbox-lg">
+            <input id="pj-task-5" type="checkbox" checked>
+            <label for="pj-task-5">Preparing the requirements document</label>
+          </div>
+        </div><!-- /.project-task -->
+
+        <div class="project-task">
+          <div class="checkbox checkbox-circle checkbox-lg">
+            <input id="pj-task-6" type="checkbox" checked>
+            <label for="pj-task-6">Defining system functional requirements</label>
+          </div>
+        </div><!-- /.project-task -->
+
+        <div class="project-task">
+          <div class="checkbox checkbox-circle checkbox-lg">
+            <input id="pj-task-7" type="checkbox" checked>
+            <label for="pj-task-7">Defining system nonfunctional requirements</label>
+          </div>
+        </div><!-- /.project-task -->
+
+        <div class="project-task">
+          <div class="checkbox checkbox-circle checkbox-lg">
+            <input id="pj-task-8" type="checkbox" checked>
+            <label for="pj-task-81">Gathering Customer Requirements</label>
+          </div>
+        </div><!-- /.project-task -->
+
+        <div class="project-task">
+          <div class="checkbox checkbox-circle checkbox-lg">
+            <input id="pj-task-9" type="checkbox" checked>
+            <label for="pj-task-9">Visiting the workplace to meet employees</label>
+          </div>
+        </div><!-- /.project-task -->
+
+        <div class="project-task">
+          <div class="checkbox checkbox-circle checkbox-lg">
+            <input id="pj-task-10" type="checkbox" checked>
+            <label for="pj-task-10">Discussing the project with customer</label>
+          </div>
+        </div><!-- /.project-task -->
+      </div><!-- /.project-tasks -->
+    </div><!-- /.app-main-content -->
+  </div><!-- /.app-main -->
+</div><!-- /.app-wrapper -->
+
+<!-- Modal -->
+<div class="modal fade" id="projects-task-modal" tabindex="-1" role="dialog" aria-divledby="myModaldiv" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-div="Close">
+          <span aria-hidden="true"><i class="zmdi zmdi-close"></i></span>
+        </button>
+        <div class="task-pickers">
+          <div class="task-field-picker task_username_picker">
+            <div for="task_username">
+              <i class="zmdi zmdi-plus"></i>
+            </div>
+            <input type="text" id="task_username" name="task_username" value="" placeholder="Username">
+          </div>
+
+          <div class="task-field-picker task_date_picker">
+            <div for="task_due_date">
+              <i class="zmdi zmdi-calendar"></i>
+            </div>
+            <input type="text" id="task_due_date" name="task_due_date" value="" placeholder="Due Date">
+          </div>
+        </div>
+      </div><!-- /.modal-header -->
+
+      <div class="modal-body">
+        <div class="task-name-wrap">
+          <span><i class="zmdi zmdi-check"></i></span>
+          <input class="task-name-field" type="text" placeholder="Task Name">
+        </div>
+        <hr>
+        <div class="task-desc-wrap">
+          <textarea class="task-desc-field" name="" id="" placeholder="Description"></textarea>
+        </div>
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

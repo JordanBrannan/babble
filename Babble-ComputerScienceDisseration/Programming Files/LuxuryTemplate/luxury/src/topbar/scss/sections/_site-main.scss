@@ -1,0 +1,35 @@
+/* [4. main] */
+.site-main {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-down(md) {
+  transition: transform .2s;
+    body.menubar-open & {
+      transform: translate3d(#{$menubar-width}, 0, 0);
+    }
+  }
+}
+
+/* [5. content area] */
+.site-content {
+  padding: $grid-gutter-width;
+  flex: 1 1 calc(100vh - #{$navbar-height});
+  
+  @include media-breakpoint-up(xl) {
+    padding-left: $menubar-width / 2;
+    padding-right: $menubar-width / 2;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+}
+
+/* [10. footer] */ 
+.site-footer {
+  border-top: 1px solid #edecec;
+  background: #fdfdfd;
+  padding: 1.5rem;
+  display: flex;
+  flex: 0 0 auto;
+}

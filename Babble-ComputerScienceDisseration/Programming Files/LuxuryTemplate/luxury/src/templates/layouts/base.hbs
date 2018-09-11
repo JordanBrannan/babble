@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
+  <!-- theme customizier \ demo only -->
+  <link rel="stylesheet" href="../assets/examples/css/theme-customizer.css">
+  <script src="../assets/examples/js/theme-customizer.js"></script>
+  
+  <!-- core plugins -->
+  <link rel="stylesheet" href="../assets/vendor/css/hamburgers.css">
+  <link rel="stylesheet" href="../assets/vendor/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bower_components/switchery/dist/switchery.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bower_components/sweetalert/dist/sweetalert.css">
+  
+  <!-- site-wide styles -->
+  <link rel="stylesheet" href="../assets/vendor/css/bootstrap.css">
+  <link rel="stylesheet" href="css/site.css">
+
+{{#if page.css_plugins}}
+  <!-- plugins for the current page -->
+  {{#each page.css_plugins}}
+  <link rel="stylesheet" href="{{this}}">
+  {{/each}}
+{{/if}}
+
+
+{{#if page.styles}}
+  <!-- current page styles -->
+  {{#each page.styles}}
+  <link rel="stylesheet" href="{{this}}">
+  {{/each}}
+{{/if}}
+  <link rel="stylesheet" href="../assets/vendor/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600">
+
+  <script src="../assets/vendor/bower_components/breakpoints.js/dist/breakpoints.min.js"></script>
+  <script>Breakpoints({xs: {min:0,max:575},sm: {min:576,max:767},md: {min:768,max:991},lg: {min:992,max:1199},xl: {min:1200,max:Infinity}});</script>
+</head>
+{% body %}
+
+  {{> theme-customizer}}
+  
+  <!-- core plugins -->
+  <script src="../assets/vendor/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bower_components/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../assets/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../assets/vendor/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="../assets/vendor/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="../assets/vendor/bower_components/switchery/dist/switchery.min.js"></script>
+  <script src="../assets/vendor/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/bower_components/waypoints/lib/shortcuts/sticky.min.js"></script>
+  <script src="../assets/vendor/bower_components/counterup/jquery.counterup.min.js"></script>
+  <script src="../assets/vendor/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../assets/vendor/js/jquery.sparkline.min.js"></script>
+  <script src="../assets/global/js/plugins/dropdown-caret.js"></script>
+  <script src="../assets/global/js/plugins/firstlitter.js"></script>
+  <script src="../assets/global/js/plugins/video-modal.js"></script>
+
+{{#if page.js_plugins}}
+  <!-- plugins for the current page -->
+  {{#each page.js_plugins}}
+  <script src="{{this}}"></script>
+  {{/each}}
+{{/if}}
+
+
+  <!-- site-wide scripts -->
+  <script src="../assets/global/js/main.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/menubar.js"></script>
+  
+{{#if page.scripts}}
+  <!-- current page scripts -->
+  {{#each page.scripts}}
+  <script src="{{this}}"></script>
+  {{/each}}
+{{/if}}
+</body>
+</html>

@@ -1,0 +1,63 @@
+---
+title: Calendar
+body_classes: app-calendar
+page:
+  styles:
+    - ../assets/examples/css/apps/calendar.css
+  scripts:
+    - ../assets/examples/js/apps/calendar.js
+  css_plugins:
+    - ../assets/vendor/bower_components/fullcalendar/dist/fullcalendar.min.css
+  js_plugins:
+    - ../assets/vendor/bower_components/moment/min/moment.min.js
+    - ../assets/vendor/bower_components/jquery-ui/jquery-ui.min.js
+    - ../assets/vendor/bower_components/fullcalendar/dist/fullcalendar.min.js
+---
+
+<div class="calendar-wrap">
+  <div class="calendar-panel">
+    <div class="row">
+      <div class="col-md-3">
+        <h1 class="display-5 font-weight-normal">AUGUST</h1>
+        <p>12-03-2016</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cum, quas fuga.</p>
+      </div><!-- /.col -->
+
+      <div class="col-md-9">
+        <div class="external-events-wrap">
+          <div id="external-events" class="external-events">
+            <div data-class="bg-primary" class="bg-primary external-event">My Event 1</div>
+            <div data-class="bg-success" class="bg-success external-event">My Event 2</div>
+            <div data-class="bg-warning" class="bg-warning external-event">My Event 3</div>
+            <div data-class="bg-danger" class="bg-danger external-event">My Event 4</div>
+          </div><!-- /.external-events -->
+
+          <hr class="mb-4">
+
+          <form action="#" class="new_event_cat_form" id="new_event_cat_form">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" name="category_name" id="category_name" class="form-control" placeholder="event name">
+              </div><!-- /.col -->
+
+              <div class="col-md-3">
+                <select name="category_color" id="category_color" class="form-control">
+                  <option value="bg-primary" selected>Primary</option>
+                  <option value="bg-success">Success</option>
+                  <option value="bg-warning">Warning</option>
+                  <option value="bg-danger">Danger</option>
+                </select>
+              </div><!-- /.col -->
+
+              <div class="col-md-3">
+                <input id="new_event_cat_submit" type="submit" class="btn btn-success btn-block" value="Create New" />
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </form>
+        </div><!-- /.external-events-wrap  -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.calendar-panel -->
+
+  <div id="fullcalendar"></div>
+</div><!-- /.calendar-wrapper -->

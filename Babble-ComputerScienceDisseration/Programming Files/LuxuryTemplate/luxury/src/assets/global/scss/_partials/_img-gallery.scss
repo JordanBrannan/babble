@@ -1,0 +1,81 @@
+.g__item {
+  margin-bottom: $grid-gutter-width;
+  display: block;
+  
+  .g__figure {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    margin: 0;
+  }
+
+  .g__img,
+  .g__figure > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.g__thumb {
+  padding: .5rem;
+  background-color: $bg-faded;
+  border: 1px solid $border-color-default;
+}
+
+.g__item.rounded {
+  .g__figure, img {
+    border-radius: $border-radius;
+  }
+}
+
+.g__overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 1s;
+
+  .g__item:hover & {
+    opacity: 1;
+    background-color: rgba(#fff, .9);
+  }
+}
+
+.g__overlay-title {
+  line-height: 1.4;
+  font-style: italic;
+  margin-bottom: .5rem;
+}
+
+.g__overlay-text {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.g__zoom {
+  align-self: center;
+  color: $brand-primary;
+}
+
+.img-gallery-zoom-effect {
+  .g__item {
+    .g__figure > img,
+    .g__img {
+      transition: transform 1s;
+    }
+  }
+
+  .g__item:hover {
+    .g__figure > img,
+    .g__img {
+      transform: scale(1.3);
+    }
+  }
+}

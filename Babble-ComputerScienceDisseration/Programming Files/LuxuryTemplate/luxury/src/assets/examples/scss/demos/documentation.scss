@@ -1,0 +1,28 @@
+@import '../base';
+
+body.documentation-page {
+  background: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
+  .demo-wrapper {
+    color: #555;
+  }
+
+  .demo-heading {
+    font-size: 2.5rem;
+  }
+  
+  code {
+    display: inline-block;
+    margin-right: .5rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+  }
+  strong {
+    display: inline-block;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    color: $brand-primary;
+    font-weight: 300;
+  }
+}

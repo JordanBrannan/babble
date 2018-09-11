@@ -1,0 +1,43 @@
+@import '../base';
+
+.price-page-wrapper {
+  @include media-breakpoint-down(lg) {
+    padding: 0 3rem;
+  }
+}
+
+.price-column {
+  border: 1px solid $border-color-default;
+  border-radius: $border-radius;
+  margin-bottom: $grid-gutter-width * 3;
+
+  @include media-breakpoint-down(md) {
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.pc__footer .btn {
+  width: 100%;
+  padding: .75rem 1rem;
+  font-size: .875rem;
+}
+
+.star-rating {
+  color: gold;
+  i {
+    font-size: 1.25rem;
+    margin-right: 4px;
+  }
+}
+
+
+.price-plan-name {
+  width: 80%;
+  max-width: 180px;
+  height: 42px;
+  line-height: 42px;
+  margin: 0 auto -20px;
+  border-radius: 1000px;
+}

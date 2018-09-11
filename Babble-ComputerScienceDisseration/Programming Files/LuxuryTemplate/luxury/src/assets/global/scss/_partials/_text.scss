@@ -1,0 +1,51 @@
+.text-white {
+  color: white !important;
+}
+
+.text-gray {
+  color: #aaa !important;
+}
+
+.text-facebook,
+.text-hv-facebook:hover {
+  color: $brand-facebook !important;
+}
+
+.text-twitter,
+.text-hv-twitter:hover {
+  color: $brand-twitter !important;
+}
+
+.text-google-plus,
+.text-hv-google-plus:hover {
+  color: $brand-google-plus !important;
+}
+
+.text-youtube,
+.text-hv-youtube:hover {
+  color: $brand-youtube !important;
+}
+
+.text-dribbble,
+.text-hv-dribbble:hover {
+  color: $brand-dribbble !important;
+}
+
+.text-flickr,
+.text-hv-flickr:hover {
+  color: $brand-flickr !important;
+}
+
+.text-linkedin,
+.text-hv-linkedin:hover {
+  color: $brand-linkedin !important;
+}
+
+.text-tumblr,
+.text-hv-tumblr:hover {
+  color: $brand-tumblr !important;
+}
+
+@each $color, $value in $colors {
+  @include text-emphasis-variant('.text-#{$color}', $value);
+}

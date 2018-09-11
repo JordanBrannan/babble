@@ -1,0 +1,108 @@
+.navbar-search {
+  @include media-breakpoint-up(xl) {
+    position: relative;
+    margin-right: 1rem;
+    height: $navbar-height;
+    display: flex;
+    align-items: center;
+    body > & {
+      display: none;
+    }
+
+    .navbar-search-field {
+      height: 30px;
+      width: 160px;
+      font-size: 14px;
+      max-width: 100%;
+      transition: width .5s;
+      &:focus {
+        width: 260px;
+        box-shadow: none;
+        border-color: $brand-success;
+      }
+    }
+    
+    .navbar-search-close {
+      display: none;
+    }
+
+    .navbar-search-submit {
+      position: absolute;
+      background: none;
+      outline: none;
+      border: none;
+      right: 4px;
+      top: 20px;
+    }
+  }
+  
+  @include media-breakpoint-down(lg) {
+    position: fixed;
+    top: - $navbar-height;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    transition: top .5s;
+    .navbar & { 
+      display: none;
+    }
+
+    .navbar-search-form {
+      height: $navbar-height;
+      padding: .75rem 2rem;
+      position: relative;
+      background: #fff;
+      width: 100%;
+      z-index: 3;
+    }
+    
+    .navbar-search-close,
+    .navbar-search-submit {
+      @include reset-input;
+      transform: translateY(-50%);
+      position: absolute;
+      background: none;
+      cursor: pointer;
+      top: 50%;
+    }
+    
+    .navbar-search-close {
+      font-size: 1.25rem;
+      font-weight: 500;
+      right: 1rem;
+      color: #bbb;
+    }
+    
+    .navbar-search-submit {
+      left: 1rem;
+    }
+
+    .navbar-search-field {
+      @include reset-input;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    .navbar-search-backdrop {
+      background: rgba(0,0,0,.8);
+      position: fixed;
+      display: none;
+      z-index: -1;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0;
+      .show & {
+        display: block;
+      }
+    }
+    
+    &.show {
+      top: 0;
+      .navbar-search-backdrop {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+---
+title: Charts | Cahrt.js
+body_classes: demo-examples demo-charts-chartjs site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+  scripts:
+    - ../assets/examples/js/demos/demos.js
+    - ../assets/examples/js/demos/charts.chartjs.js
+  js_plugins:
+    - ../assets/vendor/bower_components/chart.js/dist/Chart.min.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h1 class="demo-heading">Cahrt.js</h1>
+    <div id="contents-wrapper">
+      <h3 id="contents-heading">Contents<i class="ml-2 fa fa-chevron-down"></i></h3>
+      <div id="contents-index">
+        <ul id="contents-list">
+          <li><a href="#chartjs-line">Line Charts</a></li>
+          <li><a href="#chartjs-bar">Bar Charts</a></li>
+          <li><a href="#chartjs-other">Other Chart Types</a></li>
+        </ul>
+      </div><!-- /#contents-index -->
+    </div><!-- /#contents-wrapper -->
+  </header><!-- /.demo-header -->
+  
+  <div class="docs-brief-intro font-italic mb-4">
+    Chart.js is 
+    Simple yet flexible JavaScript charting for designers &amp; developers<br>
+    For the full documentation and other examples of <strong>Cahrt.js</strong> please
+    <a class="text-danger" href="http://www.chartjs.org/">Click here!</a>
+  </div>
+
+  <div class="bd-content">
+    <h3 id="chartjs-line" class="mb-4">Line Charts</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card p-3">
+          <h5 class="mb-4">Line Example</h5>
+          <canvas id="chartjs-line-1" width="100%"></canvas>
+          <div class="d-flex justify-content-around mt-5">
+            <button class="btn btn-outline-primary" id="randomizeData">Randomize Data</button>
+            <button class="btn btn-outline-primary" id="addDataset">Add Dataset</button>
+            <button class="btn btn-outline-primary" id="removeDataset">Remove Dataset</button>
+            <button class="btn btn-outline-primary" id="addData">Add Data</button>
+            <button class="btn btn-outline-primary" id="removeData">Remove Data</button>
+          </div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- ./row -->
+    
+    <h3 id="chartjs-bar" class="my-4">Bar Charts</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Bar Example</h5>
+          <canvas id="chartjs-bar-1" width="100%"></canvas>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Horizontal Bar</h5>
+          <canvas id="chartjs-bar-2" width="100%"></canvas>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- ./row -->
+
+    <h3 id="chartjs-other" class="my-4">Other Chart Types</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Pie Chart</h5>
+          <canvas id="chartjs-pie" width="100%"></canvas>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Donut Chart</h5>
+          <canvas id="chartjs-donut" width="100%"></canvas>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Radar Chart</h5>
+          <canvas id="chartjs-radar" width="100%"></canvas>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Polar Area</h5>
+          <canvas id="chartjs-polar-area" width="100%"></canvas>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- ./row -->
+  </div><!-- ./bd-content -->
+</div><!-- /.demo-wrapper -->

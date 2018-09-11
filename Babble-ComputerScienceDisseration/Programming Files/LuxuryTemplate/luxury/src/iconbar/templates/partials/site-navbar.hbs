@@ -1,0 +1,22 @@
+<div class="navbar-header">
+  {{> site-navbar-header-content}}
+</div><!-- /.navbar-header -->
+
+<div class="collapse navbar-collapse" id="site-navbar-collapse">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item hidden-sm-down">
+      <a class="nav-link" href="#">
+        <button data-toggle="menubar-fold" class="hamburger hamburger--arrowalt is-active js-hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </a>
+    </li>
+    {{> site-navbar-nav-left-content}}
+  </ul>
+  
+  <ul class="navbar-nav">
+    {{> site-navbar-nav-right-content}}
+  </ul><!-- /.navbar-nav -->
+</div><!-- /.navbar-collapse --> 

@@ -1,0 +1,151 @@
+$brand-primary:   #39527b;
+$brand-success:   #60c84c;
+$brand-warning:   #ffc952;
+$brand-danger:    #ff7473;
+$brand-info:      #58d9e1;
+$brand-flickr:    #ff0084;
+$brand-tumblr:    #35465c;
+$brand-twitter:   #1da1f2;
+$brand-youtube:   #cd201f;
+$brand-facebook:  #3b5998;
+$brand-dribbble:  #ea4c89;
+$brand-linkedin:  #0077b5;
+$brand-google-plus: #dd4b39;
+
+$white:  #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:  #000;
+
+$blue:    $brand-primary;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     $brand-danger;
+$orange:  #fd7e14;
+$yellow:  $brand-warning;
+$green:   $brand-success;
+$teal:    #20c997;
+$cyan:    $brand-info;
+$brown:   #795548;
+
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  brown: $brown,
+  white: $white,
+  gray: $gray-600,
+  gray-dark: $gray-800
+);
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+);
+
+// Components
+$border-color-default: #eee;
+$bg-faded: $gray-100; 
+$component-hover-bg: #f7f7f7;
+
+
+// Spacing
+$grid-gutter-width: 24px;
+
+
+// Menubar
+$menubar-width:   240px;
+$menubar-width-iconbar: 190px;
+$menubar-width-fold: 64px;
+$menubar-top-height: 64px;
+
+// Navbar
+$navbar-height:               66px;
+$navbar-bg-default:           #f7f7f7;
+$navbar-border-color-default: #e6e6e6;
+
+// header
+$header-height: 162px;
+
+
+// Cards
+$card-spacer-x:       1.5rem;
+$card-spacer-y:       .75rem;
+$card-margin-bottom:  $grid-gutter-width;
+$card-border-color:   $border-color-default;
+$card-cap-bg:         $component-hover-bg;
+
+// Links
+$link-hover-decoration: none;
+
+// Tables
+$table-bg-accent: $bg-faded;
+$table-border-color: $border-color-default;
+
+// Hamburgers
+$hamburger-padding-x:       10px;
+$hamburger-padding-y:       6px;
+$hamburger-layer-width:     22px;
+$hamburger-layer-height:    2px;
+$hamburger-layer-spacing:     3px;
+$hamburger-layer-color:     #fff;
+$hamburger-layer-border-radius: 4px;
+$hamburger-hover-opacity:     1;
+
+// Dropdowns
+$dropdown-padding-y:        5px;
+$dropdown-item-padding-x:   1rem;
+$dropdown-margin-top:       .25rem;
+$dropdown-border-color:     $border-color-default;
+$dropdown-divider-bg:       $border-color-default;
+$dropdown-box-shadow:       0 .25rem .5rem rgba(0,0,0,.08);
+$dropdown-link-hover-bg:    $component-hover-bg;
+$dropdown-cap-bg:           #fbfbfb;
+$dropdown-cap-border-color: #f0f0f0;
+
+// avatar
+$avatar-size-xs:       2rem !default;
+$avatar-size-sm:       3rem !default;
+$avatar-size-md:       4rem !default;
+$avatar-size-lg:       5rem !default;
+$avatar-size-xl:       7rem !default;
+$avatar-size-default:  2.5rem !default;
+$avatar-border-radius:    3px !default;
+$avatar-border-radius-xl: .25rem !default;
+
+// circles
+$circle-size-xs: $avatar-size-xs;
+$circle-size-sm: $avatar-size-sm;
+$circle-size-md: $avatar-size-md;
+$circle-size-lg: $avatar-size-lg;
+$circle-size-xl: $avatar-size-xl;
+$circle-size-default: $avatar-size-default;
+
+// List group
+$list-group-bg:                 #fff !default;
+$list-group-border-color:       $border-color-default !default;
+$list-group-hover-bg:           $component-hover-bg;
+
+// Fonts
+$font-size-xs: .75rem;

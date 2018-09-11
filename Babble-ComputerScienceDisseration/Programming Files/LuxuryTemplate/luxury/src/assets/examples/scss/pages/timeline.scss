@@ -1,0 +1,146 @@
+@import '../base';
+
+.pk-timeline {
+	position: relative;
+}
+
+.pk-timeline::before {
+	content: '';
+	width: 2px;
+	background-color: $border-color-default;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 2rem;
+	@media (min-width: map-get($grid-breakpoints, md)) {
+		left: 50%;
+	}
+}
+
+.pk-tl-block {
+	@include clearfix;
+	position: relative;
+	padding: 1.5rem;
+	padding-left: 2rem;
+	margin-bottom: 1.5rem;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@media (min-width: map-get($grid-breakpoints, md)) {
+		padding-left: 1.5rem;
+		margin-bottom: 0;
+	}
+}
+
+.pk-tl-icon {
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.13rem;
+	font-weight: 600;
+	border-radius: 500px;
+	background: $brand-success;
+	border: 5px solid #fff;
+	box-shadow: 0 0 1px #ddd;
+	position: absolute;
+	top: 1.5rem;
+	left: 9px;
+
+	@media (min-width: map-get($grid-breakpoints, md)) {
+		top: calc(50% - 25px);
+		left: calc(50% - 25px);
+	}
+}
+
+.pk-tl-info {
+	position: absolute;
+	top: 1.5rem;
+	left: 170px;
+	@media (min-width: map-get($grid-breakpoints, md)) {
+		top: calc(50% - 25px);
+		left: calc(50% + 50px);
+
+		.pk-tl-block:nth-child(odd) & {
+			right: calc(50% + 50px);
+			left: auto;
+		}
+	}
+}
+
+.pk-tl-content {
+	position: relative;
+	background: #fff;
+	border-radius: $border-radius;
+	border: 1px solid $border-color-default;
+	box-shadow: 0 0 12px #eee;
+	padding: .5rem;
+	margin-left: 1.5rem;
+	margin-top: 50px;
+
+	@media (min-width: map-get($grid-breakpoints, md)) {
+		width: 43%;
+		margin: 0;
+
+		.pk-tl-block:nth-child(odd) & {
+			float: right;
+		}
+	}
+}
+
+.pk-tl-avatar {
+	width: 80px;
+	height: 80px;
+	padding: 5px;
+	background: #fff;
+	border: 1px solid $border-color-default;
+	border-radius: $border-radius;
+	position: absolute;
+	top: -50px;
+	left: 20px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		border-radius: $border-radius;
+	}
+
+	@media (min-width: map-get($grid-breakpoints, md)) {
+		top: calc(50% - 40px);
+		right: -35px;
+		left: auto;
+
+		.pk-tl-block:nth-child(odd) & {
+			left: -35px;
+			right: auto;
+		}
+	}
+}
+
+
+.pk-tl-content-text {
+	background: $bg-faded;
+	min-height: 100px;
+	border-radius: $border-radius;
+	padding: 2.5rem 1.5rem 1.5rem;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: map-get($grid-breakpoints, md)) {
+		padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+
+		.pk-tl-block:nth-child(odd) & {
+			padding: 1.5rem 1.5rem 1.5rem 3.5rem;
+		}
+	}
+}
+
+.pk-tl-content-media {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}

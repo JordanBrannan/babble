@@ -1,0 +1,21 @@
+.hamburger {
+  border-radius: $border-radius;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: darken($brand-primary, 5%);
+  &:focus {
+    outline: none;
+  }
+  
+  .hamburger-box,
+  .hamburger-inner,
+  .hamburger-inner::after,
+  .hamburger-inner::before {
+    width: 20px;
+    margin: 0 auto;
+  }
+}

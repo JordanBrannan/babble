@@ -1,0 +1,79 @@
+/* [6 sidebar] */
+.site-menubar {
+  flex: 0 0 $menubar-width;
+  z-index: 998;
+
+  @include media-breakpoint-down(lg) {
+    height: calc(100% - #{$navbar-height});
+    width: $menubar-width;
+    position: fixed;
+    top: $navbar-height;
+    bottom: 0;
+    left: -($menubar-width + 2);
+    overflow: auto;
+    transition: left .2s, top .5s;
+
+    body.menubar-open & {
+      left: 0;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    body.navbar-collapse-in & {
+      height: calc(100% - #{2 * $navbar-height});
+      top: 2 * $navbar-height;
+      z-index: 999;
+    }
+  }
+}
+
+.site-menu {
+  padding: 0;
+  margin: 0;
+
+  li {
+    position: relative;
+    list-style-type: none;
+    font-size: .875rem;
+  }
+  
+  li.menu-section-heading {
+    padding: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: none !important;
+  }
+
+  li a {
+    display: flex;
+    padding: .875rem 1rem;
+    line-height: 20px;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  .menu-icon {
+    width: 1rem;
+  }
+  
+  .menu-text {
+    margin-left: 1.5rem;
+    margin-right: auto;
+  }
+
+  .menu-icon + .menu-text {
+    margin-left: .5rem;
+  }
+
+  .menu-caret {
+    transition: transform .5s ease-in-out;
+  }
+  
+  li.open > a .menu-caret {
+    transform: rotate(90deg);
+  }
+
+  .submenu {
+    display: none;
+  }
+}

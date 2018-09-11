@@ -1,0 +1,152 @@
+/* [6 Sidebar] */
+.site-menubar {
+  z-index: 998;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: $navbar-height;
+  width: $menubar-width;
+
+  body:not(.menubar-fold) & {
+    height: calc(100% - #{$navbar-height}) !important;
+  }
+
+  @include media-breakpoint-up(md) {
+    body.menubar-fold & {
+      flex: 0 0 $menubar-width-fold;
+      width: $menubar-width-fold;
+      position: relative;
+      min-height: 1300px;
+      top: 0;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    transition: left .2s, top .35s, height .35s;
+    overflow: auto;
+    left: - ($menubar-width + 2);
+
+    body.menubar-open & {
+      left: 0;
+    }
+
+    body.navbar-collapse-in & {
+      top: 2 * $navbar-height;
+      height: calc(100% - #{2 * $navbar-height});
+      z-index: 999;
+    }
+  }
+}
+
+.slimScrollDiv.disabled {
+  overflow: inherit !important;
+  height: 100% !important;
+  .site-menubar-inner {
+    overflow: inherit !important;
+    height: 100% !important;
+  }
+}
+
+.site-menu {
+  padding: 0;
+  margin: 0;
+
+  li {
+    position: relative;
+    list-style-type: none;
+    font-size: .875rem;
+  }
+  
+  li.menu-section-heading {
+    padding: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: none !important;
+  }
+
+  li a {
+    height: 48px; 
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .menu-icon {
+    width: 1rem;
+  }
+  
+  .menu-text {
+    margin-left: 2rem;
+    margin-right: auto;
+  }
+
+  .menu-icon + .menu-text {
+    margin-left: .875rem !important;
+  }
+
+  .menu-caret {
+    transition: transform .5s ease-in-out;
+  }
+  
+  li.open > a .menu-caret {
+    transform: rotate(90deg);
+  }
+
+  .submenu {
+    display: none;
+  }
+  
+  .menu-heading {
+    background: none !important;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: none;
+  }
+
+  @include media-breakpoint-up(md) {
+    body.menubar-fold & {
+      li.menu-heading {
+        display: block;
+      }
+
+      > li.menu-section-heading {
+        display: none;
+      }
+    
+      > li > a {
+        justify-content: center;
+
+        > .menu-text{ display: none; }
+        > .menu-caret { display: none; }
+      }
+      
+      .submenu {
+        width: $menubar-width;
+      }
+      
+      .submenu a {
+        padding-left: 1.5rem;
+      }
+      .submenu .menu-text {
+        margin-left: 0
+      }
+
+      // to prevent the submenu from being displayed automatically when the fold toggle
+      > li > .submenu {
+        display: none !important;
+      }
+
+      > li > .submenu {
+        position: absolute;
+        left: 100%;
+        top: 0;
+      }
+
+      > li.open > .submenu {
+        display: block !important;
+      }
+    }
+  } // end media query
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Luxury",
+  "brand": "Luxury",
+  "version": "1.0.1",
+  "description": "Luxury is a premium adman dashboard template based on bootstrap",
+  "colors": {
+    "primary"   : "#39527b",
+    "success"   : "#60c84c",
+    "info"      : "#58d9e1",
+    "warning"   : "#ffc952",
+    "danger"    : "#ff7473",
+    "white"     : "#ffffff"
+  }
+}

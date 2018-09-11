@@ -1,0 +1,10 @@
+<ion-view title="Conversations" hide-back-button="true" cache-view="false" nav-transition="none" id="page15">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button button-icon icon ion-android-add" ng-click="new()"></button>
+  </ion-nav-buttons>
+  <ion-content padding="false" class="has-header">
+    <ion-list id="conversations-list12">
+      <ion-item id="conversations-list-item6" ui-sref="menu.institution({})" ng-repeat="message in messages" ng-click="convo(message.id, message.name)" style="color: #{{message.colour}};">{{message.time}} {{message.messages}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

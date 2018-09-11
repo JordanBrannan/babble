@@ -1,0 +1,23 @@
+.circle {
+  width: $circle-size-default;
+  height: $circle-size-default;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-xs {
+  width: $circle-size-xs;
+  height: $circle-size-xs;
+}
+
+.circle-sm {
+  width: $circle-size-sm;
+  height: $circle-size-sm;
+}
+
+.circle-lg {
+  width: $circle-size-lg;
+  height: $circle-size-lg;
+}

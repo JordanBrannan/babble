@@ -1,0 +1,40 @@
+/* [3. Wrapper] */
+.site-wrapper {
+  display: flex;
+}
+
+/* [4 main area] */
+.site-main {
+  flex: 0 1 5000px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    margin-left: $menubar-width;
+    body.menubar-fold & {
+      margin-left: 0;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    transition: transform .2s;
+    body.menubar-open & {
+      transform: translate3d(#{$menubar-width}, 0, 0);
+    }
+  }
+}
+
+/* [5 content area] */
+.site-content {
+  padding: $grid-gutter-width;
+  flex: 1 1 calc(100vh - #{round(2.1 * $navbar-height + $header-height)});
+}
+
+// site-footer 
+.site-footer {
+  border-top: 1px solid #edecec;
+  background: #fdfdfd;
+  padding: 1.5rem;
+  display: flex;
+  flex: 0 0 auto;
+}

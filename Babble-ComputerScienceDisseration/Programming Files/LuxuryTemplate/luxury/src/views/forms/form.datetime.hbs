@@ -1,0 +1,132 @@
+---
+title: DateTime Plugins
+body_classes: demo-examples demo-form-datetime site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+  scripts:
+    - ../assets/examples/js/demos/forms.datetime.js
+  css_plugins:
+    - ../assets/vendor/bower_components/bootstrap-daterangepicker/daterangepicker.css
+    - ../assets/vendor/bower_components/clockpicker/dist/bootstrap-clockpicker.css
+  js_plugins:
+    - ../assets/vendor/bower_components/moment/min/moment.min.js
+    - ../assets/vendor/bower_components/bootstrap-daterangepicker/daterangepicker.js
+    - ../assets/vendor/bower_components/clockpicker/dist/bootstrap-clockpicker.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h3 class="demo-heading">Form Date &amp; Time Plugins</h3>
+  </header><!-- /.demo-header -->
+  
+  <div class="docs-brief-intro font-italic mb-4">
+    Plugins for manipulating date and time
+  </div>
+  
+  <div class="card p-4">
+    <h4 class="mb-4" id="checkboxes">Date Range Picker</h4>
+    <div class="row">
+      <div class="col-md-5">
+        <h6 class="mb-4">Basic Usage</h6>
+        <p class="mb-4">
+          Using Data attributes add to <code>&lt;input&gt;</code> the attribute<code>data-plugin="daterangepicker"</code>
+          <br>
+          You may pass other options using <code>data-*</code> to configure the plugin
+        </p>
+        <div class="form-group">
+          <label for="daterange-ex-1">Date Range Picker</label>
+          <input type="text" id="daterange-ex-1" data-plugin="daterangepicker" class="form-control" value="01/01/2015 - 01/31/2015" />
+        </div>
+      </div><!-- /.col -->
+
+      <div class="col-md">
+        <h6 class="mb-4">Advanced Usage</h6>
+        <p class="mb-4">
+          you can init the plugin in jQuery and pass your options <code>$(selector).daterangepicker({})</code>
+        </p>
+        
+        <div class="form-group">
+          <label for="daterange-ex-2">Date and Time</label>
+          <input type="text" id="daterange-ex-2" data-plugin="daterangepicker" data-timePicker="true" data-timePickerIncrement="30" class="form-control" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
+        </div>
+
+        <div class="form-group">
+          <label for="daterange-ex-2">Single Date Picker</label>
+          <input type="text" id="daterange-ex-3" class="form-control" value="10/24/1984" />
+        </div>
+
+        <div class="form-group">
+          <label for="daterange-ex-4">Predefined Ranges</label>
+          <div id="daterange-ex-4" class="float-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+            <span></span> <b class="caret"></b>
+          </div>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+    <div class="mt-4 font-italic text-muted">
+      Other Examples and options see:
+      <a class="text-danger" href="http://www.daterangepicker.com/">Documentation</a>
+    </div>
+  </div><!-- /.card -->
+
+  <div class="card p-4">
+    <h4 class="mb-4" id="checkboxes">ClockPicker</h4>
+    <div class="row">
+      <div class="col-md">
+        <h6 class="mb-4">Basic Usage</h6>
+        <p class="mb-4">
+          Using Data attributes add to <code>&lt;input&gt;</code> the attribute<code>data-plugin="clockpicker"</code>
+          <br>
+          You may pass other options using <code>data-*</code> to configure the plugin
+        </p>
+        <div class="input-group clockpicker"  style="width: 150px" data-plugin="clockpicker">
+          <input type="text" class="form-control" value="09:30">
+          <span class="input-group-addon">
+            <span class="zmdi zmdi-time"></span>
+          </span>
+        </div>
+        <p class="my-4">
+          Place at left, align the arrow to top, auto close:
+          <code>data-placement="left" data-align="top" data-autoclose="true"</code>
+        </p>
+        <div class="input-group clockpicker float-right" style="width: 150px" data-plugin="clockpicker" data-placement="left" data-align="top" data-autoclose="true">
+          <input type="text" class="form-control" value="13:14">
+          <span class="input-group-addon">
+            <span class="zmdi zmdi-time"></span>
+          </span>
+        </div>
+      </div><!-- /.col -->
+
+      <div class="col-md">
+        <h6 class="mb-4">Advanced Usage</h6>
+        <p class="mb-4">
+          Set options in javascript, instead of <code>data-*</code> :
+        </p>
+        <div class="input-group" id="clockpicker-3" style="width: 150px">
+          <input type="text" class="form-control" value="18:00">
+          <span class="input-group-addon">
+            <span class="zmdi zmdi-time"></span>
+          </span>
+        </div>
+
+        <p class="my-4">
+          Set default value, input without addon, and manual operations:
+        </p>
+        <div class="row">
+          <div class="col-sm-8">
+            <input class="form-control" id="single-input" value="" placeholder="Now">
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-light" id="check-minutes">Check the minutes</button>
+          </div>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+    <div class="mt-4 font-italic text-muted">
+      Other Examples and options see:
+      <a class="text-danger" href="https://weareoutman.github.io/clockpicker/">Documentation</a>
+    </div>
+  </div><!-- /.card -->
+</div><!-- /.demo-wrapper -->

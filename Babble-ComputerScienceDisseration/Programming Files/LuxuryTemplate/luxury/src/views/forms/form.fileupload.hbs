@@ -1,0 +1,163 @@
+---
+title: JQuery File Upload Demo
+body_classes: demo-examples demo-fileupload site-header-hidden bg-white
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+    - ../assets/examples/css/demos/form.fileupload.css
+  scripts:
+    - ../assets/examples/js/demos/form.fileupload.js
+  js_plugins:
+    - ../assets/vendor/blueimp-file-upload/js/vendor/jquery.ui.widget.js
+    - ../assets/vendor/blueimp-file-upload/js/tmpl.min.js
+    - ../assets/vendor/blueimp-file-upload/js/load-image.all.min.js
+    - ../assets/vendor/blueimp-file-upload/js/canvas-to-blob.min.js
+    - ../assets/vendor/blueimp-file-upload/js/jquery.iframe-transport.js
+    - ../assets/vendor/blueimp-file-upload/js/jquery.fileupload.js
+    - ../assets/vendor/blueimp-file-upload/js/jquery.fileupload-process.js
+    - ../assets/vendor/blueimp-file-upload/js/jquery.fileupload-image.js
+    - ../assets/vendor/blueimp-file-upload/js/jquery.fileupload-audio.js
+    - ../assets/vendor/blueimp-file-upload/js/jquery.fileupload-video.js
+    - ../assets/vendor/blueimp-file-upload/js/jquery.fileupload-validate.js
+    - ../assets/vendor/blueimp-file-upload/js/jquery.fileupload-ui.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h2 class="demo-heading">JQuery File Upload</h2>
+  </header><!-- /.demo-header -->
+
+  <div class="docs-brief-intro font-italic mb-4">
+    File Upload widget with multiple file selection, drag&drop support, progress bar, validation and preview images, audio and video for jQuery. Supports cross-domain, chunked and resumable file uploads. Works with any server-side platform (Google App Engine, PHP, Python, Ruby on Rails, Java, etc.) that supports standard HTML form file uploads.
+    For more examples and documentation please <a class="text-danger" href="https://blueimp.github.io/jQuery-File-Upload/">Click Here</a>
+  </div>
+
+  <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+    <div class="fileupload-wrapper">  
+      <div id="fileupload-drop-area" class="fileupload-drop-area">
+        <div class="fileupload-hint">
+          Drop your files over here or Click to show file dialog
+        </div>
+        <div class="fileupload-icons">
+          <svg class="svg-isvg-file-ai-icon"><use xlink:href="../assets/global/svg-sprite/sprite.svg#isvg-file-ai" /></svg>
+          <svg class="svg-isvg-file-ai-icon"><use xlink:href="../assets/global/svg-sprite/sprite.svg#isvg-file-ai" /></svg>
+          <svg class="svg-isvg-file-ai-icon"><use xlink:href="../assets/global/svg-sprite/sprite.svg#isvg-file-ai" /></svg>
+        </div>
+        <input type="file" name="files[]" multiple>
+      </div>
+    </div>
+    <!-- Redirect browsers with JavaScript disabled to the origin page -->
+    <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
+    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+    <div class="fileupload-buttonbar">
+      <div class="p-3 bg-faded">
+        <div class="d-flex align-items-center">        
+          <button type="submit" class="btn btn-primary mr-3 start">
+            <i class="fa fa-upload mr-1"></i>
+            <span>Start All</span>
+          </button>
+          <button type="reset" class="btn btn-warning mr-3 cancel">
+            <i class="fa fa-ban mr-1"></i>
+            <span>Cancel All</span>
+          </button>
+          <button type="button" class="btn btn-danger ml-auto mr-3 delete">
+            <i class="fa fa-trash mr-1"></i>
+            <span>Delete Selected</span>
+          </button>
+          <div class="checkbox">
+            <input type="checkbox" class="toggle">
+            <label></label>
+          </div>
+        </div>
+        <!-- The global file processing state -->
+        <span class="fileupload-process"></span>
+      </div>
+      <!-- The global progress state -->
+      <div class="fileupload-progress">
+        <!-- The global progress bar -->
+        <div class="progress overall-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-success" style="width:0%;"></div>
+        </div>
+        <!-- The extended global progress state -->
+        <div class="progress-extended">&nbsp;</div>
+      </div>
+    </div>
+    <!-- The table listing the files available for upload/download -->
+    <div class="files"></div>
+  </form>
+</div><!-- /.demo-wrapper -->
+
+
+<script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+  <div class="file-item template-upload fade">
+    <div class="file-item-inner">
+      <div class="preview mr-3"></div>
+      <div class="file-item-info align-self-start fz-base mr-auto">
+        <div class="name">Name: {%=file.name%}</div>
+        <span>Size: <span class="size">Processing...</span></span>
+      </div>
+      <div class="file-item-actions">
+        {% if (!i && !o.options.autoUpload) { %}
+          <button class="btn btn-icon btn-primary start" disabled>
+            <i class="fa fa-upload"></i>
+          </button>
+        {% } %}
+        {% if (!i) { %}
+          <button class="btn btn-icon btn-warning cancel">
+            <i class="fa fa-ban"></i>
+          </button>
+        {% } %}
+      </div>
+    </div><!--/.file-item-inner -->
+    <div class="progress file-item-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="progress-bar bg-success" style="width: 0%"></div>
+    </div><!--/.file-item-progress -->
+  </div><!-- /.fileupload-item -->
+{% } %}
+</script>
+
+
+<script id="template-download" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+  <div class="file-item template-download fade">
+    <div class="file-item-inner">
+      <div class="preview mr-3">
+        {% if (file.thumbnailUrl) { %}
+          <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+        {% } else { %}
+          <svg class="svg-isvg-file-ai-icon"><use xlink:href="../assets/global/svg-sprite/sprite.svg#isvg-file-ai" /></svg>
+        {% } %}
+      </div>
+      <div class="file-item-info align-self-start fz-base mr-auto">
+        <div class="name">
+          {% if (file.url) { %}
+            Name: <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+          {% } else { %}
+            <span>Name: {%=file.name%}</span>
+          {% } %}
+        </div>
+        {% if (file.error) { %}
+          <div><span class="badge badge-danger">Error</span> {%=file.error%}</div>
+        {% } %}
+        <span>size: <span class="size">{%=o.formatFileSize(file.size)%}</span></span>
+      </div>
+      <div class="file-item-actions">
+        {% if (file.deleteUrl) { %}
+          <button class="btn btn-icon btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+            <i class="fa fa-trash"></i>
+          </button>
+          <div class="checkbox checkbox-inline">
+            <input type="checkbox" name="delete" value="1" class="toggle">
+            <label></label>
+          </div>
+        {% } else { %}
+          <button class="btn btn-icon btn-warning cancel">
+            <i class="fa fa-ban"></i>
+          </button>
+        {% } %}
+      </div>
+    </div><!-- /.file-item-inner -->
+  </div><!-- /.fileupload-item -->
+{% } %}
+</script>

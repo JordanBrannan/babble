@@ -1,0 +1,11 @@
+.site-header {  
+  .jumbotron,
+  .breadcrumb {
+    background: darken(#fff, 1%);
+  }
+
+  .breadcrumb {
+    border-top-color: darken(#fff, 5%);
+    border-bottom: 1px solid $border-color-default;
+  }
+}

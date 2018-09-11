@@ -1,0 +1,21 @@
+@import '../base';
+
+.single-post {
+  .post-author-avatar {
+    left: 24px;
+    border-width: 2px;
+  }
+}
+
+.blog-wrapper {
+  width: 96%;
+  margin: 0 auto;
+  max-width: 600px;
+  @include media-breakpoint-up(md) {
+    width: 90%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 60%;
+  }
+}

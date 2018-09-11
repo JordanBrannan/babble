@@ -1,0 +1,25 @@
+@import '../base';
+
+/*
+ * Summernote depends on bootstrap 3
+ * so some default styles should
+ * be altered to look fine
+ * for bootstrap 4
+ */
+.note-editor.note-frame {
+  border-color: $border-color-default;
+}
+
+.note-toolbar {
+  background: $bg-faded;
+  .dropdown-menu .btn-group {
+    display: inline-block;
+  }
+}
+
+.note-btn {
+  padding: .5rem .75rem;
+  &:hover {
+    background-color: $bg-faded;
+  }
+}

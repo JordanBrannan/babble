@@ -1,0 +1,57 @@
+@import '../base';
+
+.accordion-custom {
+  .card {
+    padding: .25rem;
+    background: $bg-faded;
+    border: 1px solid $border-color-default;
+    border-radius: $border-radius;
+    margin-bottom: $grid-gutter-width;
+  }
+
+  .card-header,
+  .card-body {
+    background: #fff;
+    border-radius: $border-radius;
+    border: 1px solid $border-color-default;
+  }
+  
+  .card-header {
+    padding: 0;
+  }
+
+  .card-heading {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: .75rem 1rem;
+    position: relative;
+    font-size: 1rem;
+  }
+  .card-body {
+    padding: 1rem;
+    font-size: 1rem;
+    color: grayscale(600);
+    line-height: 1.6;
+  }
+
+  .card-heading::after {
+    content: '\f067';
+    font: normal normal normal 14px/1 FontAwesome;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    background: $brand-success;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    border-radius: $border-radius;
+  }
+
+  .card-heading[aria-expanded="true"]::after {
+    content: '\f068';
+  }
+}

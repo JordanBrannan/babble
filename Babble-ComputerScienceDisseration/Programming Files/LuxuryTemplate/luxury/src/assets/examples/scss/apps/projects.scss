@@ -1,0 +1,189 @@
+@import 'base';
+
+.project-task {
+	padding: 1rem 1.5rem;
+	border-bottom: 1px solid $border-color-default;
+	
+	label {
+		font-size: 1rem;
+	}
+	input[type="checkbox"]:checked + label {
+		color: #aaa;
+		font-style: italic;
+		text-decoration: line-through;
+	}
+}
+
+.projects-list {
+	padding: 1rem;
+	
+	.avatar {
+		flex: 0 0 64px;
+	}
+
+	.media {
+		padding: .5rem 0;
+		cursor: pointer;
+		&.selected,
+		&:hover {
+			.project-icon {
+				border-color: $brand-success;
+				background: #fff;
+				color: $brand-success;
+			}
+
+			.project-name {
+				color: $brand-success;
+			}
+		}
+	}
+	
+	.project-icon {
+		color: gray;
+		background: $bg-faded;
+		border: 1px solid $border-color-default;
+	}
+
+	.project-name {
+		margin-bottom: .25rem;
+		font-weight: 500;
+		white-space: nowrap;
+	}
+
+	.project-detail {
+		color: #bbb;
+		font-size: .875rem;
+		white-space: nowrap;
+	}
+}
+
+.people-list {
+	.avatar {
+		font-weight: 600;
+		font-size: 18px;
+		margin-right: .5rem;
+		margin-bottom: 1rem;
+	}
+}
+
+.add-people-btn {
+	@include reset-input;
+	&:focus {
+		outline: none;
+	}
+	cursor: pointer;
+	background: none;
+	padding: 0;
+	color: $brand-success !important;
+	border: 2px solid $brand-success;
+}
+
+#projects-task-modal {
+	.modal-dialog {
+		margin-top: 100px;
+	}
+	
+	.modal-content {
+		box-shadow: none;
+		border: none;
+	}
+
+	input::-webkit-input-placeholder {
+	  color: #ccc !important;
+	}
+	 
+	input:-moz-placeholder {
+	  color: #ccc !important;  
+	}
+	 
+	input::-moz-placeholder {
+	  color: #ccc !important;  
+	}
+	 
+	input:-ms-input-placeholder {  
+	  color: #ccc !important;  
+	}
+
+	.task-pickers {
+		display: flex;
+	}
+
+	.task-field-picker {
+		margin-right: 1rem;
+		label {
+			cursor: pointer;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			border-radius: 500px;
+			text-align: center;
+			color: $text-muted;
+			border: 1px dashed #ccc;
+			font-size: 1.5rem;
+			color: #ccc;
+			margin-right: 1rem;
+			margin-bottom: 0;
+		}
+
+		input {
+			@include reset-input;
+			font-size: 1rem;
+			color: #ccc;
+			font-weight: 400;
+			width: 100px;
+		}
+	}
+
+	.close {
+		@include reset-input;
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		text-align: center;
+		font-size: 1.13rem;
+		border-radius: 500px;
+		border: 1px solid grayscale(600);
+	}
+	
+	.task-name-wrap {
+		position: relative;
+		span {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+			text-align: center;
+			border-radius: 500px;
+			position: absolute;
+			left: 0;
+			top: calc(50% - 15px);
+			border: 1px solid #ccc;
+			font-size: 1.5rem;
+			color: #ccc;
+		}
+	}
+
+	.task-name-field,
+	.task-desc-field {
+		@include reset-input;
+		width: 100%;
+		color: $text-muted;
+	}
+
+	.task-name-field {
+		padding-left: 42px;
+		height: 60px;
+		font-size: 1.75rem;
+		font-weight: 500;
+	}
+
+	.task-desc-field {
+		height: 180px;
+		resize: none;
+		padding: 1.5rem;
+		font-size: 1rem;
+	}
+}

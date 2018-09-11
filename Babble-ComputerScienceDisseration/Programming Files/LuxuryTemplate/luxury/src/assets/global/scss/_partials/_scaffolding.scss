@@ -1,0 +1,105 @@
+body {
+font-size: 0.875rem;
+  font-weight: 300;
+  font-family: 'Roboto';
+  color: $brand-primary;
+  &.no-padding:not(.menubar-top) .site-content {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &.no-padding .site-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &.site-header-hidden .site-header {
+    display: none;
+  }
+}
+
+.site-menu {
+  &, ul, ol {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+}
+
+svg {
+  vertical-align: middle;
+}
+
+.scroll-container {
+  position: relative;
+  overflow: auto;
+  height: 100%;
+}
+
+.ps-scrollbar-y-rail {
+  width: 4px !important;
+  background: rgba(0,0,0,.2);
+}
+
+.ps-scrollbar-y {
+  background: #bbb !important;
+  width: 4px !important;
+}
+
+.jqstooltip {
+  box-sizing: content-box;
+}
+
+.flotTip{
+  background: $brand-primary !important;
+  color: #fff !important;
+  border: none !important;
+  padding: .5rem 1rem !important;
+  border-radius: $border-radius;
+  font-family: inherit;
+  font-size: .875rem !important;
+}
+
+// tables
+table.table-noborder {
+  td, th {
+    border-top: none;
+  }
+  tr:nth-child(2) td {
+    padding-top: 1.5rem;
+  }
+}
+
+td {
+  font-weight: 300;
+}
+
+th {
+  font-weight: 500;
+}
+
+.thead-success th {
+  color: #fff;
+  background-color: $brand-success;
+}
+
+.form-control {
+  box-shadow: none;
+  font-size: 1em;
+}
+
+// modals
+.modal-content {
+  box-shadow: none;
+  border: none;
+}
+
+.list-group-item {
+  display: flex;
+}
+
+iframe {
+  border: 0;
+}

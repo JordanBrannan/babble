@@ -1,0 +1,50 @@
+.modal-backdrop{
+  &.show{ opacity: .8; }
+}
+
+
+#video-modal {
+  padding: 0 !important;
+  .modal-dialog {
+    width: 460px;
+    height: 250px;
+    max-width: 100%;
+    box-shadow: none;
+    margin: 60px auto !important;
+    background: #000;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .modal-dialog {
+      width: 560px;
+      height: 315px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .modal-dialog {
+      width: 660px;
+      height: 380px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .modal-dialog {
+      width: 760px;
+      height: 440px;
+    }
+  }
+}

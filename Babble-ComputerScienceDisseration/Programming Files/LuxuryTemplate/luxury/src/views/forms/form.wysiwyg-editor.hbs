@@ -1,0 +1,83 @@
+---
+title: WYSIWYG Editors
+body_classes: demo-examples demo-form-wysiwyg-editor site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+    - ../assets/examples/css/demos/form.wysiwyg-editor.css
+  scripts:
+    - ../assets/examples/js/demos/demos.js
+    - ../assets/examples/js/demos/form.wysiwyg-editor.js
+  css_plugins:
+    - ../assets/vendor/bower_components/summernote/dist/summernote.css
+  js_plugins:
+  - ../assets/vendor/bower_components/summernote/dist/summernote.min.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h2 class="demo-heading">Summernote</h2>
+  </header><!-- /.demo-header -->
+  
+  <div class="docs-brief-intro font-italic mb-4">
+    This is a demonstration for the <strong>Summernote</strong> WYSIWYG editor.
+    for the full documentation please <a class="text-danger" href="http://summernote.org/"><strong>Click here!</strong></a>
+  </div>
+
+  <div class="card">
+    <h4 class="mb-4" id="default-editor">Default Editor</h4>
+
+    <div id="summernote">
+      <h3>WELCOME TO SUMMERNOTE</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. officiis molestias, esse aliquam, excepturi laborum odio voluptates ipsam ab, maxime pariatur error dignissimos.</p>
+      <h5>Subtitle</h5>
+      <ol>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officia</li>
+        <li>wabber whisperously unbaited aeromechanics octoploidy Selter </li>
+        <li>calorimetry encolpion photocatalytic miscomplain </li>
+        <li>unfriendliness acromyodous hatpin specifically </li>
+        <li>entame unacutely zorilla beryllia </li>
+      </ol>
+    </div>
+  </div><!-- .card -->
+
+  <div class="card">
+    <h4 class="mb-4" id="air-mode">Air-Mode</h4>
+    <p class="mb-4">
+      Air-mode gives clearer interface with hiddened toolbar. <br>
+      To reveal toolbar, select a text where you want to shape up. Simply turn on <code>airMode</code> and just focus on text.
+    </p>
+    <h4>Example</h4>
+    <div id="summernote-airmode" style="display: none;">
+      <p>This is an Air-mode editable area.</p>
+      <ul>
+        <li>Select a text to reveal the toolbar.</li>
+        <li>Edit rich document on-the-fly, so elastic!</li>
+      </ul>
+      <p>End of air-mode area</p>
+    </div>
+  </div><!-- .card -->
+
+  <div class="card">
+    <h4 class="mb-4" id="custom-toolbar">Custom Toolbar</h4>
+    <p class="mb-4">
+      Summernote allows you to make own custom toolbar.
+    </p>
+    <div id="summernote-custom-toolbar"></div>
+  </div><!-- .card -->
+
+  <div class="card">
+    <h4 class="mb-4" id="click-to-edit">Click To Edit</h4>
+    <p class="mb-4">
+      You can edit content on the fly.
+    </p>
+    <div class="mb-4">
+      <button class="btn btn-light" id="edit-btn">Edit</button>
+      <button class="btn btn-primary" id="save-btn">Save</button>
+    </div>
+    <div id="summernote-click-to-edit">
+      Click on the edit button above to edit this text.<br>
+      And after finishing editing click save!
+    </div>
+  </div><!-- .card -->
+</div><!-- /.demo-wrapper -->

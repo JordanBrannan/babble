@@ -1,0 +1,28 @@
+/* [1. body] */
+html{
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  padding-top: $navbar-height;
+  transition: padding-top .35s;
+  
+  #menubar-fold-wrap {
+    display: none;
+  }
+
+  @include media-breakpoint-down(lg) {
+    &.menubar-open {
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &.navbar-collapse-in {
+      padding-top: $navbar-height * 2;
+    }
+  }
+}

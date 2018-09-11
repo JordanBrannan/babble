@@ -1,0 +1,34 @@
+@media (max-width: 1199px) {
+  .price-page-wrapper {
+    padding: 0 3rem; } }
+
+.price-column {
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+  margin-bottom: 72px; }
+  @media (max-width: 991px) {
+    .price-column {
+      max-width: 480px;
+      margin-right: auto;
+      margin-left: auto; } }
+
+.pc__footer .btn {
+  width: 100%;
+  padding: .75rem 1rem;
+  font-size: .875rem; }
+
+.star-rating {
+  color: gold; }
+  .star-rating i {
+    font-size: 1.25rem;
+    margin-right: 4px; }
+
+.price-plan-name {
+  width: 80%;
+  max-width: 180px;
+  height: 42px;
+  line-height: 42px;
+  margin: 0 auto -20px;
+  border-radius: 1000px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByaWNlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0lBQ0UsZ0JBQWdCLEVBQUUsRUFBRTs7QUFFeEI7RUFDRSx1QkFBdUI7RUFDdkIsdUJBQXVCO0VBQ3ZCLG9CQUFvQixFQUFFO0VBQ3RCO0lBQ0U7TUFDRSxpQkFBaUI7TUFDakIsbUJBQW1CO01BQ25CLGtCQUFrQixFQUFFLEVBQUU7O0FBRTVCO0VBQ0UsWUFBWTtFQUNaLHFCQUFxQjtFQUNyQixtQkFBbUIsRUFBRTs7QUFFdkI7RUFDRSxZQUFZLEVBQUU7RUFDZDtJQUNFLG1CQUFtQjtJQUNuQixrQkFBa0IsRUFBRTs7QUFFeEI7RUFDRSxXQUFXO0VBQ1gsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLHNCQUFzQixFQUFFIiwiZmlsZSI6InBhZ2VzL3ByaWNlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBtZWRpYSAobWF4LXdpZHRoOiAxMTk5cHgpIHtcbiAgLnByaWNlLXBhZ2Utd3JhcHBlciB7XG4gICAgcGFkZGluZzogMCAzcmVtOyB9IH1cblxuLnByaWNlLWNvbHVtbiB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNlZWU7XG4gIGJvcmRlci1yYWRpdXM6IDAuMjVyZW07XG4gIG1hcmdpbi1ib3R0b206IDcycHg7IH1cbiAgQG1lZGlhIChtYXgtd2lkdGg6IDk5MXB4KSB7XG4gICAgLnByaWNlLWNvbHVtbiB7XG4gICAgICBtYXgtd2lkdGg6IDQ4MHB4O1xuICAgICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xuICAgICAgbWFyZ2luLWxlZnQ6IGF1dG87IH0gfVxuXG4ucGNfX2Zvb3RlciAuYnRuIHtcbiAgd2lkdGg6IDEwMCU7XG4gIHBhZGRpbmc6IC43NXJlbSAxcmVtO1xuICBmb250LXNpemU6IC44NzVyZW07IH1cblxuLnN0YXItcmF0aW5nIHtcbiAgY29sb3I6IGdvbGQ7IH1cbiAgLnN0YXItcmF0aW5nIGkge1xuICAgIGZvbnQtc2l6ZTogMS4yNXJlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IDRweDsgfVxuXG4ucHJpY2UtcGxhbi1uYW1lIHtcbiAgd2lkdGg6IDgwJTtcbiAgbWF4LXdpZHRoOiAxODBweDtcbiAgaGVpZ2h0OiA0MnB4O1xuICBsaW5lLWhlaWdodDogNDJweDtcbiAgbWFyZ2luOiAwIGF1dG8gLTIwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDEwMDBweDsgfVxuIl19 */

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"><g  transform="translate(0.5, 0.5)">
+<path fill="none" stroke="#2c3f65" stroke-width="1" stroke-linecap="square" stroke-miterlimit="10" d="M52.59,53.819
+C58.384,48.349,62,40.597,62,32C62,15.431,48.569,2,32,2S2,15.431,2,32s13.431,30,30,30v-9" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#56bc43" stroke-width="1" stroke-linecap="square" stroke-miterlimit="10" d="M32,46
+L32,46c-6.627,0-12-5.373-12-12V24h24v10C44,40.627,38.627,46,32,46z" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#56bc43" stroke-width="1" stroke-linecap="square" stroke-miterlimit="10" x1="25" y1="24" x2="25" y2="16" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#56bc43" stroke-width="1" stroke-linecap="square" stroke-miterlimit="10" x1="39" y1="24" x2="39" y2="16" stroke-linejoin="miter"/>
+</g></svg>

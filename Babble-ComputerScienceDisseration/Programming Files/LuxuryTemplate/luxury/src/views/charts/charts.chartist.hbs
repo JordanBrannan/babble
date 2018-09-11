@@ -1,0 +1,177 @@
+---
+title: Charts | chartist
+body_classes: demo-examples demo-charts-chartist site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+  scripts:
+    - ../assets/examples/js/demos/demos.js
+    - ../assets/examples/js/demos/charts.chartist.js
+  css_plugins:
+    - ../assets/vendor/css/chartist.css
+  js_plugins:
+    - ../assets/vendor/bower_components/chartist/dist/chartist.min.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h1 class="demo-heading">Chartist.js</h1>
+    <div id="contents-wrapper">
+      <h3 id="contents-heading">Contents<i class="ml-2 fa fa-chevron-down"></i></h3>
+      <div id="contents-index">
+        <ul id="contents-list">
+          <li><a href="#chartist-line">Line Charts</a></li>
+          <li><a href="#chartist-area">Area Charts</a></li>
+          <li><a href="#chartist-bar">Bar Charts</a></li>
+          <li><a href="#chartist-pie">Pie Charts</a></li>
+        </ul>
+      </div><!-- /#contents-index -->
+    </div><!-- /#contents-wrapper -->
+  </header><!-- /.demo-header -->
+  
+  <div class="docs-brief-intro font-italic mb-4">
+    You may think that this is just yet an other charting library. But Chartist.js is the product of a community that was disappointed about the abilities provided by other charting libraries. Of course there are hundreds of other great charting libraries but after using them there were always tweaks you would have wished for that were not included.
+    <br>For the documentation of <strong>chartist.js</strong>
+    <a class="text-danger" href="http://gionkunz.github.io/chartist-js/index.html">Click here!</a>
+  </div>
+
+  <div class="bd-content">
+    <h3 id="chartist-line" class="mb-4">Line Chart Examples</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Simple Line Chart</h5>
+          <div id="chartist-line-1" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Advanced Smil Animations</h5>
+          <div id="chartist-line-2" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Line Scatter Diagram</h5>
+          <div id="chartist-line-3" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Using Events To Replace Graphics</h5>
+          <div id="chartist-line-4" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- ./row -->
+    
+    <h3 id="chartist-area" class="my-4">Area Charts Examples</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Line Chart With Area</h5>
+          <div id="chartist-area-1" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Svg Path Animation</h5>
+          <div id="chartist-area-2" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Bi-polar Line Chart With Area Only</h5>
+          <div id="chartist-area-3" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Series Overrides</h5>
+          <div id="chartist-area-4" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- ./row -->
+    
+    <h3 id="chartist-bar" class="my-4">Bar Chart Examples</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Bi-polar Bar Chart</h5>
+          <div id="chartist-bar-1" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Overlapping Bars On Mobile</h5>
+          <div id="chartist-bar-2" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Stacked Bar Chart</h5>
+          <div id="chartist-bar-3" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Horizontal Bar Chart</h5>
+          <div id="chartist-bar-4" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Label Placement</h5>
+          <div id="chartist-bar-5" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Distributed Series</h5>
+          <div id="chartist-bar-6" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- /.row -->
+    
+    <h3 id="chartist-pie" class="my-4">Pie Charts Examples</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Simple Pie Chart</h5>
+          <div id="chartist-pie-1" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Pie Chart With Custom Labels</h5>
+          <div id="chartist-pie-2" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Gauge Chart</h5>
+          <div id="chartist-pie-3" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Animating A Donut With Svg.animate</h5>
+          <div id="chartist-pie-4" style="height:300px;"></div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+    </div><!-- ./row -->
+  </div><!-- ./bd-content -->
+</div><!-- /.demo-wrapper -->

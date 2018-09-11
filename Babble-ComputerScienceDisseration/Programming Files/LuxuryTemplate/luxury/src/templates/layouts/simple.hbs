@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- core plugins -->
+  <link rel="stylesheet" href="../assets/vendor/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/vendor/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.css">
+  <!-- core plugins -->
+{{#if page.css_plugins}}
+  <!-- plugins for the current page -->
+  {{#each page.css_plugins}}
+  <link rel="stylesheet" href="{{this}}">
+  {{/each}}
+  <!-- / plugins for the current page -->
+{{/if}}
+  
+  <!-- site-wide stylesheets -->
+  <link rel="stylesheet" href="css/site.css">
+  <!-- / site-wide stylesheets -->
+
+{{#if page.styles}}
+  <!-- styles for the current page -->
+  {{#each page.styles}}
+  <link rel="stylesheet" href="{{this}}">
+  {{/each}}
+  <!-- / styles for the current page -->
+{{/if}}
+  <style>@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,600';</style>
+</head>
+<body class="simple-page{{#if body_classes}} {{body_classes}}{{/if}}">
+<!--[if lt IE 10]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+{% body %}
+
+  <!-- core plugins -->
+  <script src="../assets/vendor/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bower_components/tether/dist/js/tether.min.js"></script>
+  <script src="../assets/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+{{#if page.js_plugins}}
+  <!-- plugins for the current page -->
+  {{#each page.js_plugins}}
+  <script src="{{this}}"></script>
+  {{/each}}
+  <!-- / plugins for the current page -->
+{{/if}}
+
+{{#if page.scripts}}
+  <!-- scripts for the current page -->
+  {{#each page.scripts}}
+  <script src="{{this}}"></script>
+  {{/each}}
+  <!-- / scripts for the current page-->
+{{/if}}
+</body>
+</html>

@@ -1,0 +1,67 @@
+---
+title: SweetAlerts Demo
+body_classes: demo-examples demo-uikit-sweetalerts site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+  scripts:
+    - ../assets/examples/js/demos/uikit.sweetalert.js
+  css_plugins:
+    - ../assets/vendor/bower_components/sweetalert/dist/sweetalert.css
+  js_plugins:
+    - ../assets/vendor/bower_components/sweetalert/dist/sweetalert.min.js
+---
+
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h2 class="demo-heading">Sweetalert</h2>
+  </header><!-- /.demo-header -->
+
+  <div class="docs-brief-intro font-italic mb-4">
+    A beautiful replacement for javascript's "alert"<br>for more information please
+    <a class="text-danger" href="http://t4t5.github.io/sweetalert/">Click here!</a>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="col-lg-6">
+        <h4 class="mb-4">Basic Examples</h4>
+        <p>
+          Simply call this function when an element is clicked<code>swal("Here's a message!")</code>
+        </p>
+        <div id="swal-example-1" class="mb-4">
+          <p>A basic message</p>
+          <button class="btn btn-info">Try Me</button>
+        </div>
+
+        <div id="swal-example-2" class="mb-4">
+          <p>A title with a text under</p>
+          <button class="btn btn-info">Try Me</button>
+        </div>
+
+        <div id="swal-example-3" class="mb-4">
+          <p>A success message!</p>
+          <button class="btn btn-info">Try Me</button>
+        </div>
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <h4 class="mb-4">More Options</h4>
+        <div id="swal-example-4" class="mb-4">
+          <p>A warning message, with a function attached to the "Confirm"-button...</p>
+          <button class="btn btn-info">Try Me</button>
+        </div>
+
+        <div id="swal-example-5" class="mb-4">
+          <p>.... and by passing a parameter, you can execute something else for "Cancel".</p>
+          <button class="btn btn-info">Try Me</button>
+        </div>
+
+        <div id="swal-example-6" class="mb-4">
+          <p>With a loader (for AJAX request for example)</p>
+          <button class="btn btn-info">Try Me</button>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.card -->
+</div><!-- /.demo-wrapper -->

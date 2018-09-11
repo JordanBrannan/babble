@@ -1,0 +1,21 @@
+<ion-view title="{{inst}}" cache-view="false" id="page11">
+  <ion-nav-buttons side="right" scroll="false" class="has-header">
+    <button class="button button-icon icon ion-android-close" ng-click="archive()"></button>
+  </ion-nav-buttons>
+  <ion-content padding="false" scroll="false" class="has-header">
+    <div id="institution-container8" scroll-glue="" class="top-container">
+      <div id="institution-markdown23" style="color:{{message.text}}; background-color: #{{message.colour}}; float: {{message.align}};" ng-repeat="message in messages" class="show-list-numbers-and-dots speech-bubble">
+        <p style="font-size:16px;">
+          <strong>{{message.messages}}</strong>
+        </p>
+
+        <p style="font-size:16px;">{{message.time}}</p>
+      </div>
+    </div>
+    <form id="institution-form12" class="list bottom-form" ng-submit="submit()">
+      <label class="item item-input" id="institution-input12" style="height: auto">
+        <input type="text" placeholder="Enter your message" ng-model="data2.message">
+      </label>
+    </form>
+  </ion-content>
+</ion-view>

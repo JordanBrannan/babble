@@ -1,0 +1,93 @@
+---
+title: Maps | jQuery Vector Map
+body_classes: demo-examples demo-maps-jqvmap site-header-hidden
+page:
+  styles:
+    - ../assets/examples/css/demos/demos.css
+  scripts:
+    - ../assets/examples/js/demos/demos.js
+    - ../assets/examples/js/demos/maps.jqvmap.sampledata.js
+    - ../assets/examples/js/demos/maps.jqvmap.js
+  css_plugins:
+    - ../assets/vendor/bower_components/jqvmap/dist/jqvmap.min.css
+  js_plugins:
+    - ../assets/vendor/bower_components/jqvmap/dist/jquery.vmap.min.js
+    - ../assets/vendor/bower_components/jqvmap/dist/maps/jquery.vmap.world.js
+    - ../assets/vendor/bower_components/jqvmap/dist/maps/jquery.vmap.usa.js
+    - ../assets/vendor/bower_components/jqvmap/dist/maps/jquery.vmap.russia.js
+    - ../assets/vendor/bower_components/jqvmap/dist/maps/continents/jquery.vmap.africa.js
+    - ../assets/vendor/bower_components/jqvmap/dist/maps/continents/jquery.vmap.asia.js
+---
+
+<style>
+  .jqvmap-zoomin, .jqvmap-zoomout {
+    box-sizing: content-box;
+  }
+</style>
+<div class="demo-wrapper">
+  <header class="demo-header mb-4">
+    <h1 class="demo-heading">jQuery Vector Maps</h1>
+    <div id="contents-wrapper">
+      <h3 id="contents-heading">Contents<i class="ml-2 fa fa-chevron-down"></i></h3>
+      <div id="contents-index">
+        <ul id="contents-list">
+          <li><a href="#world">World</a></li>
+          <li><a href="#continents">Continents</a></li>
+          <li><a href="#countries">Countries</a></li>
+        </ul>
+      </div><!-- /#contents-index -->
+    </div><!-- /#contents-wrapper -->
+  </header><!-- /.demo-header -->
+  
+  <div class="docs-brief-intro font-italic mb-4">
+    JQVMap is a jQuery plugin that renders Vector Maps.
+    It uses resizable Scalable Vector Graphics (SVG) for modern browsers like:<br> Firefox, Safari, Chrome, Opera and Internet Explorer 9.
+    for the full documentation please
+    <a class="text-danger" href="https://jqvmap.com/">Click here!</a>
+  </div>
+
+  <div class="bd-content">
+    <h3 id="world" class="mb-4">World</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card p-3">
+          <h5 class="mb-4">World Map</h5>
+          <div id="vmap-world" style="width: 100%; height: 450px"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+    
+    <h3 id="continents" class="my-4">Continents</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Africa Map</h5>
+          <div id="vmap-africa" style="width: 100%; height: 340px"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Asia Map</h5>
+          <div id="vmap-asia" style="width: 100%; height: 340px"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+    
+    <h3 id="countries" class="my-4">Countries</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">USA Map</h5>
+          <div id="vmap-usa" style="width: 100%; height: 340px"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 class="mb-4">Russia Map</h5>
+          <div id="vmap-russia" style="width: 100%; height: 340px"></div>
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.bd-content -->
